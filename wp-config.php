@@ -26,7 +26,7 @@ define('DB_NAME', 'wp-batraz');
 define('DB_USER', 'root');
 
 /** Password del database MySQL */
-define('DB_PASSWORD', '19450406');
+define('DB_PASSWORD', 'root');
 
 /** Hostname MySQL  */
 define('DB_HOST', 'localhost');
