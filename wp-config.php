@@ -17,6 +17,7 @@
  * @package WordPress
  */
 
+
 // ** Impostazioni MySQL - E? possibile ottenere questoe informazioni
 // ** dal proprio fornitore di hosting ** //
 /** Il nome del database di WordPress */

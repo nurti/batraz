@@ -1,0 +1,7 @@
+- fork warriag/batraz
+- clone tramite netbeans
+(git clone https://github.com/username/Spoon-Knife.git)
+- git remote add warriag https://github.com/warriag/batraz.git
+- git remote
+- git fetch warriag
+- git merge warriag/master
