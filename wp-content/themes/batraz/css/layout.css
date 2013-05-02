@@ -195,65 +195,53 @@ footer div.site-info p.annotation{
     margin-right: auto;
 }
 
+.header-leaders span{
+    line-height: 20px;
+    line-height: 1.428571rem;
+}
+
 .leaders-list{
     margin-bottom: 14px !important;
 }
 
-.content-leaders{
+.content-leaders, .flickr-sets, .flickr-photos{
     position: relative;
-    margin:0 10px;
-    margin :0 0.714285714rem;
+/*    margin:0 10px;
+    margin :0 0.714285714rem;*/
+     margin: 0 14px;
+     margin :0 1rem;
     max-width:99%; 
+
+}
+
+.content-leaders, .flickr-sets{
     height:170px;
     height: 12.14285714rem;
     overflow:hidden;
 }
 
-.leaders-nav {
+.leaders-nav, .flickr-sets-nav , .flickr-photos-nav{
     position: absolute;
     height: 100%;
-    z-index: 8040;
+    z-index: 8010;
 }
 
-.leaders-nav span {
+.leaders-nav span, .flickr-sets-nav span,  .flickr-photos-nav span, nav.nav-single-otp span {
      position: absolute;
      width: 32px;
-     height: 46px;
-     margin-top: -23px;
-     z-index: 8040;
+     height: 64px;
+     margin-top: -32px;
+     z-index: 8010;
      top: 50%;
 }
 
-.leaders-prev {
+.leaders-prev, .flickr-sets-prev , .flickr-photos-prev {
 	left: 0;
 }
 
-.leaders-next {
+.leaders-next, .flickr-sets-next, .flickr-photos-next {
 	right: 32px;
 }
-
-
-
-
-/*.leaders-prev span {
-     position: absolute;
-     background: url('images/previous-2.png') no-repeat;
-     width: 54px;
-     height: 54px;
-     margin-top: -27px;
-     z-index: 8040;
-     top: 50%;
-}
-
-.leaders-next span {
-     position: absolute;
-     background: url('images/next-2.png') no-repeat;
-     width: 54px;
-     height: 54px;
-     margin-top: -27px;
-     z-index: 8040;
-     top: 50%;
-}*/
 
 
 
@@ -272,17 +260,16 @@ footer div.site-info p.annotation{
     width:10rem;
     height:130px;
     height: 9.285714rem;
-/*    float:left;*/
     margin:0 20px;
     margin:0 1.42857rem;
 }
 
-/*.content-leaders a{
+.content-leaders .content-leaders-wrapper a{
     text-decoration: none;
-    text-align: center;
+    padding-top:7px;
     display: block;
-    margin:auto;
-}*/
+}
+
 
 /*---------------------------------------------------------------------------
         FLICKR
@@ -290,63 +277,149 @@ footer div.site-info p.annotation{
 .site-content-full .entry-header .entry-title{
     display:none;
 }
-.flickr-sets{
-    
-    height: 140px;
-    max-width:90%;
-    padding-top:10px;
-    overflow: auto;
-    margin:14px auto 28px auto;
+
+
+.flickr-sets .flickr-sets-wrapper{
+    padding:36px 0 20px 0;
+    padding :2.571428rem 0 1.42857143rem  0;
+    text-align: center;
+    white-space: nowrap;
+    height:120px;
+    overflow:hidden;
    
 }
 
-.flickr-sets .flickr-sets-wrapper{
-    overflow: hidden;
+
+
+.flickr-photos .flickr-photos-wrapper{
+    text-align: center;
+/*    white-space: nowrap;*/
+       
 }
 
 .flickr-sets .flickr-sets-wrapper .Sets{
-    float:left;
+    display: inline-block;
+    width:100px;
+    width : 7.14286rem;
     margin:0 20px;
+    margin:0 1.42857rem;
 }
 
-.flickr-sets .flickr-sets-wrapper .Sets .SetCase{
-    padding: 7px 0 0 7px;
-    width: 91px;
-    height: 95px;
-    background: url(../images/set_case.gif) no-repeat;
+ .flickr-photos .flickr-photos-wrapper .imageContainer{
+    display: inline-block;
 }
 
-.flickr-photos {
-    max-width: 90%;
-    max-height: 140px;
-    margin:14px auto 28px auto;
-    padding:10px;
-    overflow: auto;
-}
-
-.flickr-photos .flickr-photos-wrapper{
-    overflow: hidden;
-}
-
-/* IMAGES STYLE */
-/*.flickr-photos-wrapper ul{width:100%;height:100%}*/
-.flickr-photos .imageContainer{
-    float:left;
-    position:relative;
-/*    display: inline;*/
-/*    width:200px;
-    height:200px;*/
-    margin: 10px 10px 0 0;
-    padding:3px;
-    border: 1px solid #666;
-}
-.flickr-photos .imageContainer a img{
-/*    position:absolute;
-    clip: rect(0px 200px 200px 0px);
-    min-height: 200px;
-    min-width: 200px;*/
-}
 
 .flickr-photos .imageContainer span{
-    display: none;
+    display: block;
+}
+
+/*---------------------------------------------------------------------------
+        OTP NAV
+-----------------------------------------------------------------------------*/
+nav.nav-single-otp{
+    position: relative;
+    min-height: 140px;
+    min-height: 10rem;
+    margin:14px 0 14px 0;
+    padding-top:14px;
+
+}
+
+nav.nav-single-otp > span{
+     position: absolute;
+     text-align: center;
+     width: 100%;
+     font: bold "Helvetica Neue", Sans-Serif;
+     text-transform: uppercase;
+    
+}
+    
+
+nav.nav-single-otp div{
+    display: inline-block;
+    position: absolute;
+}
+
+
+nav.nav-single-otp .nav-single-otp-prev{
+    left : 0;
+    
+}
+
+nav.nav-single-otp .nav-single-otp-next{
+    right : 10px;
+    
+}
+
+
+nav.nav-single-otp .nav-single-otp-prev a span {
+/*     position: absolute;*/
+     width: 32px;
+     height: 64px;
+     margin-top: -32px;
+     margin-left: -24px;
+     z-index: 8010;
+     top: 50%;
+     
+}
+
+nav.nav-single-otp .nav-single-otp-next a span {
+/*     position: absolute;*/
+     width: 32px;
+     height: 64px;
+     margin-top: -32px;
+/*     margin-right: 20px;*/
+     z-index: 8010;
+     top: 50%;
+     
+}
+
+nav.nav-single-otp .nav-single-otp-prev a img {
+     margin-left:10px;
+}
+
+/*---------------------------------------------------------------------------
+        CROSS POST
+-----------------------------------------------------------------------------*/
+.cross-post {
+	border-bottom: 4px double;
+	margin-bottom: 72px;
+	margin-bottom: 5.142857143rem;
+	padding-bottom: 24px;
+	padding-bottom: 1.714285714rem;
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+.cross-post-list > div:first-child {
+	border-top: 4px double;
+	margin-top: 72px;
+	margin-top: 5.142857143rem;
+	padding-top: 24px;
+	padding-top: 1.714285714rem;
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+/*---------------------------------------------------------------------------
+        TABLE IN ENTRY CONTENT
+-----------------------------------------------------------------------------*/
+.entry-content table{
+    border: 1px solid;
+    border-color: #000000;
+    border-collapse: separate;
+}
+
+.entry-content td{
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.entry-content td p{
+    margin: auto;
 }
