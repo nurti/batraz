@@ -2,9 +2,9 @@
      <?php if(function_exists("leader_header_ajax_setting")) : $leadarr = leader_header_ajax_setting(); ?>
         <?php if(is_array($leadarr) && array_key_exists('slug', $leadarr)) : ?>
              <div class="leaders-list ui-widget" title="<?php echo get_taxonomy($leadarr['slug'])->labels->name;  ?>">
-                  <?php if(isset($leadarr['show_desc']) && $leadarr['show_desc']) : ?>
+             <?php if(isset($leadarr['show_desc']) && $leadarr['show_desc']) : ?>
                         <div class="header-leaders ui-widget-header ui-corner-all">
-                              <?php echo get_taxonomy($leadarr['slug'])->description; ?>
+                              <span><marquee> <?php echo get_taxonomy($leadarr['slug'])->description; ?></marquee></span>
                         </div> 
                    <?php endif; ?>
                    <div id="slide-leaders" class="content-leaders">
@@ -12,10 +12,12 @@
                    </div>
              </div>
               <script>
+                 
                 jQuery(document).ready(function(){
                      jQuery("#slide-leaders").loadLeaders({ slug : '<?php echo $leadarr['slug']; ?>',
-                                                            ppp : 3,
-                                                            debug : <?php echo WP_DEBUG ?>
+                                                            ppp : <?php the_leaders_ppp_option(); ?>,
+                                                            speed : <?php the_leaders_speed_option(); ?>,
+                                                            debug : <?php the_debug_state(); ?>
                                             });
                 });
              </script>

@@ -373,11 +373,9 @@ a.comment-reply-link, .edit-link  a{
 .ui-tooltip {
     padding: 10px 20px;
     color: #bbb;
-/*    border-radius: 20px;*/
     border-radius: 14px;
     font: bold 14px "Helvetica Neue", Sans-Serif;
     text-transform: uppercase;
-/*    box-shadow: 0 0 7px black;*/
     box-shadow: 0 0 7px #1FA7E4;
 
 }
@@ -424,13 +422,43 @@ a.comment-reply-link, .edit-link  a{
 }
 
 
-/*----------------------------------------------------------------------------*/
-/*                  LEADERS BUTTONS( 38 x 54 )  
-/*-----------------------------------------------------------------------------*/
-.leaders-prev span {
-    background: url('images/previous.png') no-repeat;;
+/*---------------------------------------------------------------------------
+        BUTTONS NAV SLIDE( 32 x 46 )  
+-----------------------------------------------------------------------------*/
+
+.leaders-prev span, .flickr-sets-prev span , .flickr-photos-prev span{
+    background: url('images/previous-white.png') no-repeat;;
 }
 
-.leaders-next span {
-    background: url('images/next.png') no-repeat;;
+.leaders-next span, .flickr-sets-next span , .flickr-photos-next span {
+    background: url('images/next-white.png') no-repeat;;
+}
+
+nav.nav-single-otp .nav-single-otp-prev a span{
+    background: url('images/previous-white.png') no-repeat;;
+}
+
+nav.nav-single-otp .nav-single-otp-next a span{
+    background: url('images/next-white.png') no-repeat;;
+}
+
+/*---------------------------------------------------------------------------
+        FLICKR
+-----------------------------------------------------------------------------*/
+.flickr-sets .flickr-sets-wrapper .Sets .SetCase{
+    padding-top:7px;
+    width: 91px;
+    height: 95px;
+    background: url(images/set_case.gif) no-repeat;
+}
+
+/*---------------------------------------------------------------------------
+        CROSS POST
+-----------------------------------------------------------------------------*/
+.cross-post {
+        border-color: #ededed;
+}
+
+.cross-post-list > div:first-child {
+        border-color: #ededed;
 }

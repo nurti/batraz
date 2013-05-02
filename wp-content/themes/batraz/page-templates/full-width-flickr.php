@@ -35,8 +35,14 @@ get_header(); ?>
 	</div><!-- #primary -->
         <script>
             jQuery(document).ready(function(){
-                jQuery("#content").flickrLoad({'theme' : '<?php echo $GLOBALS['mSBtheme'] ?>',
-                                              'size' : 'thumbnail', 'sizeZoom' : 'large'});
+                jQuery("#content").flickrLoad({theme : '<?php echo $GLOBALS['mSBtheme'] ?>',
+                                               dim : 'small', 
+                                               dimZoom : 'large',
+                                               photos : {
+                                                   cols : 3,
+                                                   rows : 3,
+                                                   speed : 9
+                                               }});
             });
         </script>
 <?php get_footer(); ?>

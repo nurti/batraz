@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Ultimate Tinymce Lite\n"
-"POT-Creation-Date: 2013-03-11 02:39-0500\n"
-"PO-Revision-Date: 2013-03-11 02:39-0500\n"
+"POT-Creation-Date: 2013-04-20 22:14-0500\n"
+"PO-Revision-Date: 2013-04-20 22:15-0500\n"
 "Last-Translator: Josh Lobe <joshlobe@joshlobe.com>\n"
 "Language-Team: Josh Lobe <joshlobe@joshlobe.com>\n"
 "Language: English\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.4\n"
+"X-Generator: Poedit 1.5.5\n"
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -28,386 +28,414 @@ msgid ""
 "\">Hide this Message</a>"
 msgstr ""
 
-#: admin_functions.php:151
-msgid "Number of posts to show:"
-msgstr ""
-
-#: admin_functions.php:199
+#: admin_functions.php:88
 msgid "Font Select Button"
 msgstr ""
 
-#: admin_functions.php:200
+#: admin_functions.php:89
 msgid "Font Size Button"
 msgstr ""
 
-#: admin_functions.php:201
+#: admin_functions.php:90
 msgid "Cut Button"
 msgstr ""
 
-#: admin_functions.php:202
+#: admin_functions.php:91
 msgid "Copy Button"
 msgstr ""
 
-#: admin_functions.php:203
+#: admin_functions.php:92
 msgid "Paste Button"
 msgstr ""
 
-#: admin_functions.php:204
+#: admin_functions.php:93
 msgid "Background Color Picker Button"
 msgstr ""
 
-#: admin_functions.php:205
+#: admin_functions.php:94
 msgid "Foreground Color Picker Button"
 msgstr ""
 
-#: admin_functions.php:206
+#: admin_functions.php:95
 msgid "Horizontal Rule Button"
 msgstr ""
 
-#: admin_functions.php:207
+#: admin_functions.php:96
 msgid "Visual Aid Button"
 msgstr ""
 
-#: admin_functions.php:208
+#: admin_functions.php:97
 msgid "Anchor Button"
 msgstr ""
 
-#: admin_functions.php:209
+#: admin_functions.php:98
 msgid "Subscript Button"
 msgstr ""
 
-#: admin_functions.php:210
+#: admin_functions.php:99
 msgid "Superscript Button"
 msgstr ""
 
-#: admin_functions.php:211
+#: admin_functions.php:100
 msgid "Search Button"
 msgstr ""
 
-#: admin_functions.php:212
+#: admin_functions.php:101
 msgid "Replace Button"
 msgstr ""
 
-#: admin_functions.php:213
+#: admin_functions.php:102
 msgid "Insert Date/Time Button"
 msgstr ""
 
-#: admin_functions.php:214
+#: admin_functions.php:103
 msgid "Insert Nonbreaking Button"
 msgstr ""
 
-#: admin_functions.php:215
+#: admin_functions.php:104
 msgid "Insert Mailto Button"
 msgstr ""
 
-#: admin_functions.php:216
+#: admin_functions.php:105
 msgid "Insert Layers Buttons"
 msgstr ""
 
-#: admin_functions.php:217
+#: admin_functions.php:106
 msgid "Insert Span Button"
 msgstr ""
 
-#: admin_functions.php:218
+#: admin_functions.php:107
 msgid "Insert Equation Button"
 msgstr ""
 
-#: admin_functions.php:219
+#: admin_functions.php:108
 msgid "Insert Encode/Decode Buttons"
 msgstr ""
 
-#: admin_functions.php:220
+#: admin_functions.php:109
 msgid "Insert Text Direction Buttons"
 msgstr ""
 
-#: admin_functions.php:221
+#: admin_functions.php:110
 msgid "EZ Image Button"
 msgstr ""
 
-#: admin_functions.php:222
+#: admin_functions.php:111
 msgid "Paragraph Tags Button"
 msgstr ""
 
-#: admin_functions.php:223
+#: admin_functions.php:112
 msgid "Line Break Button"
 msgstr ""
 
-#: admin_functions.php:224
+#: admin_functions.php:113
 msgid "TinyMCE Moxiecode Image Manager"
 msgstr ""
 
-#: admin_functions.php:235
+#: admin_functions.php:124
 msgid "Style Select Button"
 msgstr ""
 
-#: admin_functions.php:236
+#: admin_functions.php:125
 msgid "Table Controls Dropdown Button"
 msgstr ""
 
-#: admin_functions.php:237
+#: admin_functions.php:126
 msgid "Emotions Button"
 msgstr ""
 
-#: admin_functions.php:238
+#: admin_functions.php:127
 msgid "Advanced Image Button"
 msgstr ""
 
-#: admin_functions.php:239
+#: admin_functions.php:128
 msgid "Preview Button"
 msgstr ""
 
-#: admin_functions.php:240
+#: admin_functions.php:129
 msgid "Citations Button"
 msgstr ""
 
-#: admin_functions.php:241
+#: admin_functions.php:130
 msgid "Abbreviations Button"
 msgstr ""
 
-#: admin_functions.php:242
+#: admin_functions.php:131
 msgid "Acronym Button"
 msgstr ""
 
-#: admin_functions.php:243
+#: admin_functions.php:132
 msgid "Delete Button"
 msgstr ""
 
-#: admin_functions.php:244
+#: admin_functions.php:133
 msgid "Insert Button"
 msgstr ""
 
-#: admin_functions.php:245
+#: admin_functions.php:134
 msgid "Attributes Button"
 msgstr ""
 
-#: admin_functions.php:246
+#: admin_functions.php:135
 msgid "Styleprops Box"
 msgstr ""
 
-#: admin_functions.php:247
+#: admin_functions.php:136
 msgid "HTML Code Button"
 msgstr ""
 
-#: admin_functions.php:248
+#: admin_functions.php:137
 msgid "HTML Code Magic Button"
 msgstr ""
 
-#: admin_functions.php:249
+#: admin_functions.php:138
 msgid "HTML5 Tags Button"
 msgstr ""
 
-#: admin_functions.php:250
+#: admin_functions.php:139
 msgid "Insert Media Button"
 msgstr ""
 
-#: admin_functions.php:251
+#: admin_functions.php:140
 msgid "Insert YouTube Video Button"
 msgstr ""
 
-#: admin_functions.php:252
+#: admin_functions.php:141
 msgid "Insert YouTubeIframe Video Button"
 msgstr ""
 
-#: admin_functions.php:253
+#: admin_functions.php:142
 msgid "Image Map Editor Button"
 msgstr ""
 
-#: admin_functions.php:254
+#: admin_functions.php:143
 msgid "Toggle Visual Characters Button"
 msgstr ""
 
-#: admin_functions.php:255
+#: admin_functions.php:144
 msgid "Print Button"
 msgstr ""
 
-#: admin_functions.php:256
+#: admin_functions.php:145
 msgid "Shortcodes Button"
 msgstr ""
 
-#: admin_functions.php:257
+#: admin_functions.php:146
 msgid "Lorem Ipsum Button"
 msgstr ""
 
-#: admin_functions.php:258
+#: admin_functions.php:147
 msgid "W3C Validate Button"
 msgstr ""
 
-#: admin_functions.php:259
+#: admin_functions.php:148
 msgid "Cliker ClipArt"
 msgstr ""
 
-#: admin_functions.php:260
+#: admin_functions.php:149
 msgid "Accessibility Checker"
 msgstr ""
 
-#: admin_functions.php:261
+#: admin_functions.php:150
 msgid "Advanced Link Button"
 msgstr ""
 
-#: admin_functions.php:262
+#: admin_functions.php:151
 msgid "Clear Div Buttons"
 msgstr ""
 
-#: admin_functions.php:263
+#: admin_functions.php:152
 msgid "Enable NextPage (PageBreak) Button"
 msgstr ""
 
-#: admin_functions.php:274
-msgid "WP Photo Album Plus"
-msgstr ""
-
-#: admin_functions.php:285
+#: admin_functions.php:163
 msgid "Change the color of the Editor."
 msgstr ""
 
-#: admin_functions.php:286
+#: admin_functions.php:164
 msgid "Add ID Column to page/post admin list."
 msgstr ""
 
-#: admin_functions.php:287
+#: admin_functions.php:165
 msgid "Allow shortcode usage in widget text areas."
 msgstr ""
 
-#: admin_functions.php:288
+#: admin_functions.php:166
 msgid "Use PHP Text Widget"
 msgstr ""
 
-#: admin_functions.php:289
+#: admin_functions.php:167
 msgid "Enable Line Break Shortcode"
 msgstr ""
 
-#: admin_functions.php:290
+#: admin_functions.php:168
 msgid "Enable Columns Shortcodes"
 msgstr ""
 
-#: admin_functions.php:291
+#: admin_functions.php:169
 msgid "Disable wpautop"
 msgstr ""
 
-#: admin_functions.php:292
+#: admin_functions.php:170
 msgid "Remove <b>p</b> and <b>br</b> quicktags"
 msgstr ""
 
-#: admin_functions.php:293
+#: admin_functions.php:171
 msgid "Save scrollbar position in editor"
 msgstr ""
 
-#: admin_functions.php:294
+#: admin_functions.php:172
 msgid "Add a Signoff Shortcode"
 msgstr ""
 
-#: admin_functions.php:305
+#: admin_functions.php:183
+msgid "Developer Credit"
+msgstr ""
+
+#: admin_functions.php:184
 msgid "Load editor-style.css file"
 msgstr ""
 
-#: admin_functions.php:306
+#: admin_functions.php:185
 msgid "Enable Ultimate Tinymce Excerpt Area"
 msgstr ""
 
-#: admin_functions.php:307
+#: admin_functions.php:186
 msgid "Disable content editor TEXT tab"
 msgstr ""
 
-#: admin_functions.php:308
+#: admin_functions.php:187
 msgid "Enable dashboard widget"
 msgstr ""
 
-#: admin_functions.php:309
+#: admin_functions.php:188
 msgid "Enable admin bar link"
 msgstr ""
 
-#: admin_functions.php:310
+#: admin_functions.php:189
 msgid "Enable content.css file"
 msgstr ""
 
-#: admin_functions.php:311
+#: admin_functions.php:190
 msgid "Disable all plugin \"beautifications\""
 msgstr ""
 
-#: admin_functions.php:312
+#: admin_functions.php:191
 msgid "Disable \"force\" refresh of tinymce"
 msgstr ""
 
-#: admin_functions.php:313
+#: admin_functions.php:192
 msgid "Disable \"force\" open kitchen sink"
 msgstr ""
 
-#: admin_functions.php:314
+#: admin_functions.php:193
 msgid "Enable QR (Quick Response) code on posts"
 msgstr ""
 
-#: admin_functions.php:315
+#: admin_functions.php:194
 msgid "Enable QR (Quick Response) code on pages"
 msgstr ""
 
-#: admin_functions.php:316 admin_functions.php:317 admin_functions.php:318
-#: admin_functions.php:319
+#: admin_functions.php:195 admin_functions.php:196 admin_functions.php:197
+#: admin_functions.php:198
 msgid " "
 msgstr ""
 
-#: admin_functions.php:330
+#: admin_functions.php:209
 msgid "Enable Over-Rides"
 msgstr ""
 
-#: admin_functions.php:331
+#: admin_functions.php:210
 msgid "Tinymce Background Color"
 msgstr ""
 
-#: admin_functions.php:332
+#: admin_functions.php:211
 msgid "Tinymce Font Color"
 msgstr ""
 
-#: admin_functions.php:333
+#: admin_functions.php:212
 msgid "Tinymce Font Size"
 msgstr ""
 
-#: admin_functions.php:334
+#: admin_functions.php:213
 msgid "Tinymce Default Font"
 msgstr ""
 
-#: admin_functions.php:335
+#: admin_functions.php:214
 msgid "Tinymce Line Height"
 msgstr ""
 
-#: admin_functions.php:336
+#: admin_functions.php:215
 msgid "Tinymce Text Direction"
 msgstr ""
 
-#: admin_functions.php:337
+#: admin_functions.php:216
 msgid "Tinymce Padding"
 msgstr ""
 
-#: admin_functions.php:338
+#: admin_functions.php:217
 msgid "Tinymce Margin"
 msgstr ""
 
-#: main.php:71
+#: main.php:70
 msgid "Settings"
 msgstr ""
 
-#: main.php:72
+#: main.php:71
 msgid "Support Forum"
 msgstr ""
 
-#: main.php:122
-msgid ""
-"This plugin requires WordPress version 3.3.1 or newer. Please upgrade your "
-"WordPress installation or download an"
-msgstr ""
-
-#: main.php:122
-msgid "older version of the plugin."
-msgstr ""
-
-#: main.php:210
+#: main.php:145
 msgid "Ultimate TinyMCE"
 msgstr ""
 
-#: main.php:243
+#: main.php:503
+msgid "Ultimate Tinymce Quick Settings Tool:"
+msgstr ""
+
+#: main.php:505
+msgid "Use these options to quickly configure settings for Ultimate Tinymce."
+msgstr ""
+
+#: main.php:507
+msgid "Load 'beginner' configuration."
+msgstr ""
+
+#: main.php:508
+msgid "Load 'intermediate' configuration."
+msgstr ""
+
+#: main.php:509
+msgid "Load 'advanced' configuration."
+msgstr ""
+
+#: main.php:510
+msgid "No Thanks. My current settings are fine."
+msgstr ""
+
+#: main.php:511
+msgid "Submit"
+msgstr ""
+
+#: main.php:515
+msgid "Beautify Plugin (Unchecking disables the option - enabled by default)"
+msgstr ""
+
+#: main.php:516
+msgid ""
+"Support the Developer (Leaving checked enables the option - disabled by "
+"default)"
+msgstr ""
+
+#: main.php:519
+msgid "(do not show me this pop-up again)"
+msgstr ""
+
+#: main.php:549
 msgid "Help Documentation"
 msgstr ""
 
-#: main.php:243
+#: main.php:549
 msgid ""
 "<ul><li class=\"help_tab_list_image\">The best resource for expedited help "
 "is my <a target=\"_blank\" href=\"http://www.forum.joshlobe.com/\">Support "
@@ -416,11 +444,11 @@ msgid ""
 "to read user comments.</ul>"
 msgstr ""
 
-#: main.php:244
+#: main.php:550
 msgid "Settings Page Tips"
 msgstr ""
 
-#: main.php:244
+#: main.php:550
 msgid ""
 "Here are some important items to remember regarding the new settings page."
 "<br /><ul><li class=\"help_tab_list_image\">Each option has a dedicated help "
@@ -435,87 +463,83 @@ msgid ""
 "button will appear.</ul>"
 msgstr ""
 
-#: main.php:251
+#: main.php:557
 msgid ""
 "Ultimate Tinymce Help<br /><br /><a target=\"_blank\" href=\"http://www."
 "forum.joshlobe.com/\">Support Forum</a>"
 msgstr ""
 
-#: main.php:273 main.php:757
+#: main.php:579 main.php:1062
 msgid "Buttons Group 1"
 msgstr ""
 
-#: main.php:274 main.php:758
+#: main.php:580 main.php:1063
 msgid "Buttons Group 2"
 msgstr ""
 
-#: main.php:275
-msgid "Other Plugins' Buttons"
-msgstr ""
-
-#: main.php:276
+#: main.php:581
 msgid "Miscellaneous Features"
 msgstr ""
 
-#: main.php:277 main.php:761
+#: main.php:582 main.php:1066
 msgid "Admin Options"
 msgstr ""
 
-#: main.php:278
+#: main.php:583
 msgid "Content Editor (Tinymce) Over-rides"
 msgstr ""
 
-#: main.php:303
+#: main.php:608
 msgid "Ultimate Tinymce Admin Settings Page"
 msgstr ""
 
-#: main.php:308
+#: main.php:613
 msgid "Ultimate Tinymce "
 msgstr ""
 
-#: main.php:310
+#: main.php:615
 msgid "Admin Settings Page"
 msgstr ""
 
-#: main.php:335
+#: main.php:640
 msgid "Plugin Addons"
 msgstr ""
 
-#: main.php:336
+#: main.php:641
 msgid "Donations"
 msgstr ""
 
-#: main.php:337
+#: main.php:642
 msgid "Spread the Word"
 msgstr ""
 
-#: main.php:338
+#: main.php:643
 msgid "Getting Started"
 msgstr ""
 
-#: main.php:339
+#: main.php:644
 msgid "Admin Tips"
 msgstr ""
 
-#: main.php:340
+#: main.php:645
 msgid "Default Settings"
 msgstr ""
 
-#: main.php:341
+#: main.php:646
 msgid "Uninstall Plugin"
 msgstr ""
 
-#: main.php:348
+#: main.php:653
 msgid "Plugin Addons:"
 msgstr ""
 
-#: main.php:352
+#: main.php:657
 msgid ""
 "These addons provide additional features for Ultimate TinyMCE.  Click the "
 "title to view the download page."
 msgstr ""
 
-#: main.php:358
+#: main.php:663
 msgid ""
 "<a target=\"_blank\" title=\"Easily Integrate Google Webfonts into your "
 "Website.\" href=\"http://www.plugins.joshlobe.com/ultimate-tinymce-google-"
@@ -523,43 +547,43 @@ msgid ""
 "span></a>"
 msgstr ""
 
-#: main.php:359 main.php:378 main.php:397 main.php:416 main.php:440
-#: main.php:460 main.php:479
+#: main.php:664 main.php:683 main.php:702 main.php:721 main.php:745
+#: main.php:765 main.php:784
 msgid "(Toggle)"
 msgstr ""
 
-#: main.php:364 main.php:383 main.php:402 main.php:421 main.php:445
-#: main.php:465
+#: main.php:669 main.php:688 main.php:707 main.php:726 main.php:750
+#: main.php:770
 msgid "<span style=\"color:green;\">Activated</span>"
 msgstr ""
 
-#: main.php:367 main.php:386 main.php:405 main.php:424 main.php:448
-#: main.php:468
+#: main.php:672 main.php:691 main.php:710 main.php:729 main.php:753
+#: main.php:773
 msgid "<span style=\"color:red;\">Not Activated</span>"
 msgstr ""
 
-#: main.php:368
+#: main.php:673
 msgid ""
 "Choose any combination of Google Webfonts, and add them to the font dropdown "
 "selector.<br /><br />Fonts are rendered on both the editor screen, and to "
 "all front-end viewers."
 msgstr ""
 
-#: main.php:377
+#: main.php:682
 msgid ""
 "<a target=\"_blank\" title=\"Easily add custom styles to your content.\" "
 "href=\"http://www.plugins.joshlobe.com/ultimate-tinymce-custom-styles/"
 "\"><span style=\"font-family:'Unlock', cursive;\">Custom Styles</span></a>"
 msgstr ""
 
-#: main.php:387
+#: main.php:692
 msgid ""
 "Define unlimited custom styles, and add them to the styleselect dropdown "
 "list.<br /><br />Styles are rendered in both the editor screen and the front "
 "end of the website."
 msgstr ""
 
-#: main.php:396
+#: main.php:701
 msgid ""
 "<a target=\"_blank\" title=\"Add a list of over 80 predefined styles to your "
 "editor.\" href=\"http://www.plugins.joshlobe.com/predefined-custom-styles/"
@@ -567,28 +591,28 @@ msgid ""
 "a>"
 msgstr ""
 
-#: main.php:406
+#: main.php:711
 msgid ""
 "A collection of my custom styles.  No need to create your own.<br /><br /"
 ">Install this plugin and have instant access to over 80 custom styles (and "
 "growing)."
 msgstr ""
 
-#: main.php:415
+#: main.php:720
 msgid ""
 "<a target=\"_blank\" title=\"Apply six unique color settings to your admin "
 "panel.\" href=\"http://www.plugins.joshlobe.com/wp-admin-colors/\"><span "
 "style=\"font-family:'Unlock', cursive;\">WP Admin Colors</span></a>"
 msgstr ""
 
-#: main.php:425
+#: main.php:730
 msgid ""
 "Here is a compliment to the color selection for the tinymce editor. This "
 "addon will provide a choice of six unique stylesheets to apply to the entire "
 "admin panel dashboard."
 msgstr ""
 
-#: main.php:439
+#: main.php:744
 msgid ""
 "<a target=\"_blank\" title=\"Take powerful control over the visual tinymce "
 "editor.\" href=\"http://www.plugins.joshlobe.com/ultimate-tinymce-advanced-"
@@ -596,13 +620,13 @@ msgid ""
 "Configuration</span></a>"
 msgstr ""
 
-#: main.php:449
+#: main.php:754
 msgid ""
 "Take advanced control over your visual tinymce editor.  Control settings "
 "such as button placement, font sizes, date and time formats, and more."
 msgstr ""
 
-#: main.php:459
+#: main.php:764
 msgid ""
 "<a target=\"_blank\" title=\"Take powerful control over the visual tinymce "
 "editor.\" href=\"http://www.plugins.joshlobe.com/ultimate-tinymce-classes-"
@@ -610,58 +634,58 @@ msgid ""
 "span></a>"
 msgstr ""
 
-#: main.php:469
+#: main.php:774
 msgid ""
 "Ultimate Tinymce Classes and IDs is a plugin for WordPress TinyMCE which "
 "enables the usage of CSS classes and CSS ids on any HTML element within "
 "TinyMCE."
 msgstr ""
 
-#: main.php:469
+#: main.php:774
 msgid ""
 "Together with an external CSS file, Ultimate Tinymce Classes and IDs bridges "
 "the (visual) gap between the content entered through TinyMCE and the actual "
 "output."
 msgstr ""
 
-#: main.php:478
+#: main.php:783
 msgid ""
 "<a target=\"_blank\" title=\"Ultimate Tinymce PRO\" href=\"http://"
 "ultimatetinymcepro.com\"><span style=\"font-family:'Unlock', cursive;"
 "\">Ultimate Tinymce PRO</span></a>"
 msgstr ""
 
-#: main.php:481
+#: main.php:786
 msgid "New!"
 msgstr ""
 
-#: main.php:485
+#: main.php:790
 msgid ""
 "Are you using the most advanced WP visual editor available? Get it today!"
 msgstr ""
 
-#: main.php:508
+#: main.php:813
 msgid "Donations:"
 msgstr ""
 
-#: main.php:512
+#: main.php:817
 msgid "Support the Developer"
 msgstr ""
 
-#: main.php:514
+#: main.php:819
 msgid ""
 "Developing this awesome plugin took a lot of effort and time; months and "
 "months of continuous voluntary unpaid work."
 msgstr ""
 
-#: main.php:525
+#: main.php:830
 msgid ""
 "If you like this plugin or if you are using it for commercial websites, "
 "please consider a donation to the author to help support future updates and "
 "development."
 msgstr ""
 
-#: main.php:530
+#: main.php:835
 msgid ""
 "<span class=\"content_wrapper_title\">Main uses of Donations</span><ul class="
 "\"help_tab_list_image\"><li>Web Hosting Fees</li><li>Cable Internet Fees</"
@@ -669,19 +693,19 @@ msgid ""
 "Improvements</li><li>Sunday Father-Daughter Day</li></ul>"
 msgstr ""
 
-#: main.php:534
+#: main.php:839
 msgid "Donate Securely via Paypal"
 msgstr ""
 
-#: main.php:552
+#: main.php:857
 msgid "Spread the Word:"
 msgstr ""
 
-#: main.php:556
+#: main.php:861
 msgid "Blog about this Plugin"
 msgstr ""
 
-#: main.php:564
+#: main.php:869
 msgid ""
 "<ul class=\"help_tab_list_image\"><li>Do you like this plugin, and use it "
 "regularly on your site?</li><li>Why not write a brief article recommending "
@@ -690,11 +714,11 @@ msgid ""
 "</li></ul>"
 msgstr ""
 
-#: main.php:570
+#: main.php:875
 msgid "Vote and Click Works"
 msgstr ""
 
-#: main.php:576
+#: main.php:881
 msgid ""
 "Please take a few moments to visit the plugin download page to vote and "
 "click \"Works\".  You must have an account on wordpress to rate and vote. "
@@ -705,23 +729,23 @@ msgid ""
 "Page</a>"
 msgstr ""
 
-#: main.php:582
+#: main.php:887
 msgid "Twitter & Facebook"
 msgstr ""
 
-#: main.php:600
+#: main.php:905
 msgid "Getting Started:"
 msgstr ""
 
-#: main.php:604
+#: main.php:909
 msgid "Setting up the Admin Settings Page"
 msgstr ""
 
-#: main.php:615
+#: main.php:920
 msgid "Tips and Tricks for the Admin Panel"
 msgstr ""
 
-#: main.php:618
+#: main.php:923
 msgid ""
 "<span class=\"content_wrapper_title\">Screen Options:</span><ul class="
 "\"help_tab_list_image\"><li>Click the \"Screen Options\" tab in the upper-"
@@ -730,7 +754,7 @@ msgid ""
 "ul>"
 msgstr ""
 
-#: main.php:622
+#: main.php:927
 msgid ""
 "<span class=\"content_wrapper_title\">Meta Boxes:</span><ul class="
 "\"help_tab_list_image\"><li>Each Meta-Box can be clicked to collapse/expand "
@@ -740,7 +764,7 @@ msgid ""
 "visited; the last chosen layout remains.</li></ul>"
 msgstr ""
 
-#: main.php:626
+#: main.php:931
 msgid ""
 "<span class=\"content_wrapper_title\">Button Row Selection:</span><ul class="
 "\"help_tab_list_image\"><li>Each button from this plugin can be assigned to "
@@ -751,55 +775,55 @@ msgid ""
 "back here and select a different row for those buttons.</li></ul>"
 msgstr ""
 
-#: main.php:633
+#: main.php:938
 msgid "Load developers suggested settings."
 msgstr ""
 
-#: main.php:644
+#: main.php:949
 msgid "Uninstall Plugin & Delete Database Entries:"
 msgstr ""
 
-#: main.php:677
+#: main.php:982
 msgid "Need Support?"
 msgstr ""
 
-#: main.php:678
+#: main.php:983
 msgid "Dedicated Support Forum"
 msgstr ""
 
-#: main.php:679
+#: main.php:984
 msgid "Contact Me"
 msgstr ""
 
-#: main.php:680
+#: main.php:985
 msgid "Button Definitions"
 msgstr ""
 
-#: main.php:681
+#: main.php:986
 msgid "Other Plugin Features"
 msgstr ""
 
-#: main.php:685
+#: main.php:990
 msgid "Like to Follow?"
 msgstr ""
 
-#: main.php:686
+#: main.php:991
 msgid "Facebook"
 msgstr ""
 
-#: main.php:687
+#: main.php:992
 msgid "Twitter"
 msgstr ""
 
-#: main.php:688
+#: main.php:993
 msgid "YouTube"
 msgstr ""
 
-#: main.php:692
+#: main.php:997
 msgid "New Rating System!"
 msgstr ""
 
-#: main.php:694
+#: main.php:999
 msgid ""
 "<a target=\"_blank\" href=\"http://wordpress.org/support/view/plugin-reviews/"
 "ultimate-tinymce\"><strong>Ultimate Tinymce Ratings Page</strong></a><br /"
@@ -808,113 +832,105 @@ msgid ""
 "and leave a rating and a comment to help others in the future."
 msgstr ""
 
-#: main.php:698
+#: main.php:1003
 msgid "Want to Signup?"
 msgstr ""
 
-#: main.php:705
+#: main.php:1010
 msgid "Subscribe to the Ultimate Tinymce Newsletter!"
 msgstr ""
 
-#: main.php:708
+#: main.php:1013
 msgid "Name:"
 msgstr ""
 
-#: main.php:712
+#: main.php:1017
 msgid "Email:"
 msgstr ""
 
-#: main.php:716
+#: main.php:1021
 msgid "Subscribe"
 msgstr ""
 
-#: main.php:716
+#: main.php:1021
 msgid "Unsubscribe"
 msgstr ""
 
-#: main.php:724
+#: main.php:1029
 msgid ""
 "Receive news about new features, links to tutorials and videos, and other "
 "\"first-response\" emails regarding this plugin."
 msgstr ""
 
-#: main.php:728
+#: main.php:1033
 msgid "Enjoy PRO Features?"
 msgstr ""
 
-#: main.php:729
+#: main.php:1034
 msgid "Ultimate Tinymce PRO"
 msgstr ""
 
-#: main.php:755
+#: main.php:1060
 msgid "Quick Navigation:"
 msgstr ""
 
-#: main.php:759
+#: main.php:1064
 msgid "Other Buttons"
 msgstr ""
 
-#: main.php:760
+#: main.php:1065
 msgid "Misc. Features"
 msgstr ""
 
-#: main.php:762
+#: main.php:1067
 msgid "Editor Over-rides"
 msgstr ""
 
-#: main.php:796
+#: main.php:1101
 msgid "Cheatin&#8217; uh?"
 msgstr ""
 
-#: main.php:813
+#: main.php:1118
 msgid "Update Buttons Group One Options"
 msgstr ""
 
-#: main.php:816
+#: main.php:1121
 msgid "Buttons Group One Master Controls:"
 msgstr ""
 
-#: main.php:826 main.php:859
+#: main.php:1131 main.php:1164
 msgid "Export"
 msgstr ""
 
-#: main.php:828
+#: main.php:1133
 msgid "Export Buttons Group One Settings:"
 msgstr ""
 
-#: main.php:830 main.php:863
+#: main.php:1135 main.php:1168
 msgid "Export Settings"
 msgstr ""
 
-#: main.php:846
+#: main.php:1151
 msgid "Update Buttons Group Two Options"
 msgstr ""
 
-#: main.php:849
+#: main.php:1154
 msgid "Buttons Group Two Master Controls:"
 msgstr ""
 
-#: main.php:861
+#: main.php:1166
 msgid "Export Buttons Group Two Settings:"
 msgstr ""
 
-#: main.php:886
+#: main.php:1191
 msgid "Update Tinymce Options"
 msgstr ""
 
-#: main.php:896
-msgid "Other Plugins Buttons Master Controls:"
-msgstr ""
-
-#: main.php:904
-msgid "Update Other Plugins Buttons Options"
-msgstr ""
-
-#: main.php:922
+#: main.php:1209
 msgid "Update Miscellaneous Options"
 msgstr ""
 
-#: main.php:943
+#: main.php:1230
 msgid "Update Admin Options"
 msgstr ""
 
@@ -939,174 +955,174 @@ msgid ""
 "settings will certainly do the trick.</p><br /><br />"
 msgstr ""
 
-#: options_callback_functions.php:14
-msgid "These options will support other plugins' buttons, if installed."
-msgstr ""
-
-#: options_callback_functions.php:17 options_callback_functions.php:20
+#: options_callback_functions.php:14 options_callback_functions.php:17
 msgid ""
 "<p><strong>Get detailed help for each feature from the <a target=\"_blank\" "
 "href=\"http://utmce.joshlobe.com/other-plugin-features/\">Ultimate Tinymce "
 "Website</a></strong>.</p>"
 msgstr ""
 
-#: options_callback_functions.php:425
+#: options_callback_functions.php:422
 msgid "Available Soon in Ultimate Tinymce PRO Version"
 msgstr ""
 
-#: options_callback_functions.php:917
-msgid "Not Installed"
-msgstr ""
-
-#: options_callback_functions.php:938
+#: options_callback_functions.php:911
 msgid ""
 "Don't miss the <a target=\"_blank\" href=\"http://www.plugins.joshlobe.com/"
 "wp-admin-colors/\">WP Admin Colors</a> addon."
 msgstr ""
 
-#: options_callback_functions.php:954
+#: options_callback_functions.php:927
 msgid "Adds a button to \"break\" posts into multiple pages."
 msgstr ""
 
-#: options_callback_functions.php:960
+#: options_callback_functions.php:933
 msgid "Adds ID column to post/page admin list."
 msgstr ""
 
-#: options_callback_functions.php:966
+#: options_callback_functions.php:939
 msgid "Use all shortcodes in widget areas too."
 msgstr ""
 
-#: options_callback_functions.php:972
+#: options_callback_functions.php:945
 msgid "Adds a widget which can be used to insert PHP code."
 msgstr ""
 
-#: options_callback_functions.php:978
+#: options_callback_functions.php:951
 msgid "Simply use the <b>[break]</b> shortcode"
 msgstr ""
 
-#: options_callback_functions.php:984
+#: options_callback_functions.php:957
 msgid "Use to create magazine-style columns."
 msgstr ""
 
-#: options_callback_functions.php:990
+#: options_callback_functions.php:963
 msgid "Disables the WordPress <strong>wpautop()</strong> function."
 msgstr ""
 
-#: options_callback_functions.php:996
+#: options_callback_functions.php:969
 msgid "Removes the p and br tags from the text editor."
 msgstr ""
 
-#: options_callback_functions.php:1002
+#: options_callback_functions.php:975
 msgid "Restore scrollbar position after saving post/page content."
 msgstr ""
 
-#: options_callback_functions.php:1006
+#: options_callback_functions.php:979
 msgid ""
 "Use the editor below to create content which can be inserted into a post/"
 "page using the <b>[signoff]</b> shortcode."
 msgstr ""
 
-#: options_callback_functions.php:1013
+#: options_callback_functions.php:986
+msgid "Gives credit to the developer in form of a hidden link."
+msgstr ""
+
+#: options_callback_functions.php:991
 msgid "If availble in your theme, loads the editor-style.css file."
 msgstr ""
 
-#: options_callback_functions.php:1018
+#: options_callback_functions.php:996
 msgid "Enables Ultimate Tinymce in the excerpt area of Posts."
 msgstr ""
 
-#: options_callback_functions.php:1023
+#: options_callback_functions.php:1001
 msgid "Removes the TEXT tab from the content editor, rendering it unusuable"
 msgstr ""
 
-#: options_callback_functions.php:1028
+#: options_callback_functions.php:1006
 msgid "Adds a dashboard widget with a News Feed from Ultimate Tinymce."
 msgstr ""
 
-#: options_callback_functions.php:1033
+#: options_callback_functions.php:1011
 msgid ""
 "Adds a link to the admin bar for quick access to the Tinymce Settings Page."
 msgstr ""
 
-#: options_callback_functions.php:1038
+#: options_callback_functions.php:1016
 msgid "Click help icon for detailed information."
 msgstr ""
 
-#: options_callback_functions.php:1044
+#: options_callback_functions.php:1022
 msgid "Removes all author plugin admin styling"
 msgstr ""
 
-#: options_callback_functions.php:1049
+#: options_callback_functions.php:1027
 msgid "Disables the force caching of tinymce on page reload."
 msgstr ""
 
-#: options_callback_functions.php:1054
+#: options_callback_functions.php:1032
 msgid "Disables the force open state of \"kitchen sink\" button."
 msgstr ""
 
-#: options_callback_functions.php:1060
+#: options_callback_functions.php:1038
 msgid "Displays unique qr code at bottom of each post"
 msgstr ""
 
-#: options_callback_functions.php:1066
+#: options_callback_functions.php:1044
 msgid "Displays unique qr code at bottom of each page"
 msgstr ""
 
-#: options_callback_functions.php:1111
+#: options_callback_functions.php:1089
 msgid "Enable"
 msgstr ""
 
-#: options_callback_functions.php:1119 options_callback_functions.php:1122
+#: options_callback_functions.php:1097 options_callback_functions.php:1100
 msgid "Enter Hex Number (ex. #FFFFFF)"
 msgstr ""
 
-#: options_callback_functions.php:1130 options_callback_functions.php:1133
+#: options_callback_functions.php:1108 options_callback_functions.php:1111
 msgid "Enter Hex Number (ex. #000000)"
 msgstr ""
 
-#: options_callback_functions.php:1141 options_callback_functions.php:1144
+#: options_callback_functions.php:1119 options_callback_functions.php:1122
 msgid "Enter Font Size (ex. 12px, 14pt, 1.2em)"
 msgstr ""
 
-#: options_callback_functions.php:1149 options_callback_functions.php:1153
-#: options_callback_functions.php:1157 options_callback_functions.php:1161
-#: options_callback_functions.php:1165
+#: options_callback_functions.php:1127 options_callback_functions.php:1131
+#: options_callback_functions.php:1135 options_callback_functions.php:1139
+#: options_callback_functions.php:1143
 msgid "Available in Ultimate Tinymce PRO Version"
 msgstr ""
 
-#: options_functions.php:865
+#: options_functions.php:798
 msgid "ID"
 msgstr ""
 
-#: options_functions.php:894
+#: options_functions.php:828
 msgid "Arbitrary text, HTML, or PHP Code"
 msgstr ""
 
-#: options_functions.php:896
+#: options_functions.php:830
 msgid "Ultimate Tinymce PHP Widget"
 msgstr ""
 
-#: options_functions.php:931
+#: options_functions.php:865
 msgid "Title:"
 msgstr ""
 
-#: options_functions.php:936
+#: options_functions.php:870
 msgid "Automatically add paragraphs."
 msgstr ""
 
-#: options_functions.php:1151
+#: options_functions.php:1103
 msgid "Ultimate Tinymce Excerpt"
 msgstr ""
 
-#: includes/defaults.php:120
+#: options_functions.php:1183
+msgid "Number of posts to show:"
+msgstr ""
+
+#: includes/defaults.php:147
 msgid "Load Default Settings"
 msgstr ""
 
-#: includes/defaults.php:125 includes/defaults.php:147
+#: includes/defaults.php:152 includes/defaults.php:174
 msgid ""
 "You must also check the confirm box before default options will be loaded."
 msgstr ""
 
-#: includes/defaults.php:131
+#: includes/defaults.php:158
 msgid ""
 "<ul class=\"help_tab_list_image\"><li>Load developers suggested default "
 "settings.</li><li>Basically, two additional rows will be added to the editor "
@@ -1117,11 +1133,11 @@ msgid ""
 "buttons.</li></ul>"
 msgstr ""
 
-#: includes/defaults.php:135
+#: includes/defaults.php:162
 msgid "<b>Please confirm before proceeding</b><br /><br />"
 msgstr ""
 
-#: includes/defaults.php:136
+#: includes/defaults.php:163
 msgid "Load Defaults"
 msgstr ""
 
@@ -1163,17 +1179,17 @@ msgstr ""
 msgid "Import Buttons Group Two Settings"
 msgstr ""
 
-#: includes/uninstall.php:26
+#: includes/uninstall.php:27
 msgid "Uninstall Ultimate Tinymce"
 msgstr ""
 
-#: includes/uninstall.php:32 includes/uninstall.php:51
+#: includes/uninstall.php:33 includes/uninstall.php:52
 msgid ""
 "You must also check the confirm box before options will be uninstalled and "
 "deleted."
 msgstr ""
 
-#: includes/uninstall.php:37
+#: includes/uninstall.php:38
 msgid ""
 "<ul class=\"help_tab_list_image\"><li>The options for this plugin are not "
 "removed upon deactivation to ensure that no data is lost unintentionally.</"
@@ -1184,10 +1200,10 @@ msgid ""
 "need to be re-configured if deleted.</li></ul>"
 msgstr ""
 
-#: includes/uninstall.php:39
+#: includes/uninstall.php:40
 msgid "Please confirm before proceeding<br /><br />"
 msgstr ""
 
-#: includes/uninstall.php:40
+#: includes/uninstall.php:41
 msgid "Uninstall"
 msgstr ""

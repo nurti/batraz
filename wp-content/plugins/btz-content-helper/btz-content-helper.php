@@ -19,6 +19,9 @@ if( !class_exists( 'Btz_Popup' ) )
 if( !class_exists( 'Btz_Shortcodes' ) )
 	require_once( 'class-btz-shortcodes.php' );
 
+if( !class_exists( 'Btz_Cross_Post' ) )
+	require_once( 'class-btz-cross-post.php' );
+
 // --------------------
 // --  PLUGIN HOOKS  --
 // --------------------
@@ -30,7 +33,12 @@ function btzsc_enqueue_scripts(){
      wp_enqueue_style( 'btzsc-style' );
     
 }
-
+add_filter('upload_mimes', 'custom_upload_mimes');
+function custom_upload_mimes ( $existing_mimes=array() ) {
+        
+	$existing_mimes['webm'] = 'video/webm';
+	return $existing_mimes;
+}
 
 /*
  *  mostra ID nella lista dei posts
@@ -83,5 +91,6 @@ function other_args_default($args){
 
  new Btz_Popup();
  new Btz_Shortcodes();
+ new BTZ_Cross_Post();
 
 ?>

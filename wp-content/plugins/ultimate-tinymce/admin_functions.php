@@ -34,44 +34,6 @@ function jwl_is_my_plugin_screen() {
     }  
 }
 
-
-/*
-**********************************
-Testing Text Editor Quicktags
-**********************************
-*/
-// Add buttons to html editor
-
-add_action('admin_print_footer_scripts','jwl_ult_quicktags');
-function jwl_ult_quicktags() {
-//wp_enqueue_script( 'quicktags' );
-	?>
-	<script type="text/javascript" charset="utf-8">
-	/* Adding Quicktag buttons to the editor Wordpress ver. 3.3 and above
-	* - Button HTML ID (required)
-	* - Button display, value="" attribute (required)
-	* - Opening Tag (required)
-	* - Closing Tag (required)
-	* - Access key, accesskey="" attribute for the button (optional)
-	* - Title, title="" attribute (optional)
-	* - Priority/position on bar, 1-9 = first, 11-19 = second, 21-29 = third, etc. (optional)
-	*/
-	if ( typeof (QTags) != 'undefined' ) {
-		QTags.addButton( 'jwl_paragraph', 'p', '<p class="none">', '</p>', 'p', 'Insert paragraph tags', '1' );
-		QTags.addButton( 'jwl_linebreak', 'br','<br class="none" />\n', '', 'br', 'Insert a linebreak', '2' );
-	}
-	</script>
-	<?php
-}
-// Here we will remove the above tags if the user opts to do so
-
-$options_remove_pbr_quicktags = get_option('jwl_options_group3');
-$jwl_pbr_quicktags = isset($options_remove_pbr_quicktags['jwl_remove_pbr_field_id']);
-if($jwl_pbr_quicktags == '1') {
-	remove_action('admin_print_footer_scripts','jwl_ult_quicktags');
-}
-
-
 // Change our default Tinymce configuration values
 function jwl_change_mce_options($initArray) {
 	//$initArray['popup_css'] = plugin_dir_url( __FILE__ ) . 'css/popup.css';
@@ -102,81 +64,6 @@ function jwl_change_mce_options($initArray) {
 	return $initArray;
 }
 add_filter('tiny_mce_before_init', 'jwl_change_mce_options');
-
-// Insert a dashboard Ultimate Tinymce Widget for RSS feed.
-$options = get_option('jwl_options_group4');
-$jwl_dashboard = isset($options['jwl_dashboard_widget']);
-if ($jwl_dashboard == '1') {
-	
-	add_action('wp_dashboard_setup', 'my_custom_dashboard_widgets');
-	function my_custom_dashboard_widgets() {
-	   global $wp_meta_boxes;
-	   wp_add_dashboard_widget('jwl_tinymce_dashboard_widget', 'Ultimate Tinymce RSS Feed', 'jwl_tinymce_widget', 'jwl_configure_widget');
-	}
-	
-	function jwl_tinymce_widget() {
-		$jwl_widgets = get_option( 'jwl_dashboard_options4' ); // Get the dashboard widget options
-		$jwl_widget_id = 'jwl_tinymce_dashboard_widget'; // This must be the same ID we set in wp_add_dashboard_widget
-		/* Check whether we have set the post count through the controls. If we didn't, set the default to 5 */
-		$jwl_total_items = 	isset( $jwl_widgets[$jwl_widget_id] ) && isset( $jwl_widgets[$jwl_widget_id]['items'] )
-							? absint( $jwl_widgets[$jwl_widget_id]['items'] ) : 5;
-		// Echo the output of the RSS Feed.
-		echo '<p style="border-bottom:#000 1px solid;">'; echo 'Showing ('.$jwl_total_items.') Posts'; echo '</p>';
-		echo '<div class="rss-widget">';
-		   wp_widget_rss_output(array( 'url' => 'http://www.plugins.joshlobe.com/feed/', 'title' => '', 'items' => $jwl_total_items, 'show_summary' => 0, 'show_author' => 0, 'show_date' => 0 ));
-		echo "</div>";
-		echo '<p style="text-align:center;border-top: #000 1px solid;padding:5px;"><a href="http://www.plugins.joshlobe.com/">Ultimate Tinymce</a> - Visual Wordpress Editor</p>';
-	}
-	
-	function jwl_configure_widget(){
-		$jwl_widget_id = 'jwl_tinymce_dashboard_widget'; // This must be the same ID we set in wp_add_dashboard_widget
-		$jwl_form_id = 'jwl-dashboard-control'; // Set this to whatever you want
-			
-		// Checks whether there are already dashboard widget options in the database
-		if ( !$jwl_widget_options = get_option( 'jwl_dashboard_options' ) )
-			$jwl_widget_options = array(); // If not, we create a new array
-		// Check whether we have information for this form
-		if ( !isset($jwl_widget_options[$jwl_widget_id]) )
-			$jwl_widget_options[$jwl_widget_id] = array(); // If not, we create a new array
-		// Check whether our form was just submitted
-		if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST[$jwl_form_id]) ) {
-			/* Get the value. In this case ['items'] is from the input field with the name of '.$form_id.'[items] */
-			$jwl_number = absint( $_POST[$jwl_form_id]['items'] );
-			$jwl_widget_options[$jwl_widget_id]['items'] = $jwl_number; // Set the number of items
-			update_option( 'jwl_dashboard_options', $jwl_widget_options ); // Update our dashboard widget options so we can access later
-		}
-		
-		/* Check if we have set the number of posts previously. If we didn't, then we just set it as empty. This value is used when we create the input field */
-		$jwl_number = isset( $jwl_widget_options[$jwl_widget_id]['items'] ) ? (int) $jwl_widget_options[$jwl_widget_id]['items'] : '';
-		
-		// Create our form fields. Pay very close attention to the name part of the input field.
-		echo '<p><label for="jwl_tinymce_dashboard_widget-number">' . __('Number of posts to show:') . '</label>';
-		echo '<input id="jwl_tinymce_dashboard_widget-number" name="'.$jwl_form_id.'[items]" type="text" value="' . $jwl_number . '" size="3" /></p>';
-	}
-}
-
-// Set an admin bar link to the settings page
-$jwl_admin_links = isset($options['jwl_admin_bar_link']);
-if ($jwl_admin_links == '1') {
-	function jwl_admin_bar_init() {
-		// Is the user sufficiently leveled, or has the bar been disabled?
-		if (!is_super_admin() || !is_admin_bar_showing() )
-			return;
-		// Good to go, lets do this!
-		add_action('admin_bar_menu', 'jwl_admin_bar_links', 500);
-	}
-	add_action('admin_bar_init', 'jwl_admin_bar_init');
-
-	function jwl_admin_bar_links() {
-		global $wp_admin_bar;
-		$path = get_option('siteurl');
-		// Links to add, in the form: 'Label' => 'URL'
-		$links = array( 'Settings Page' => '' );
-		$wp_admin_bar->add_menu( array( 'id' => 'utmce', 'title' => 'Ultimate Tinymce', 'href' => false, 'id' => 'jwl_links', 'href' => $path . '/wp-admin/admin.php?page=ultimate-tinymce' ));
-		/** * Add the submenu links. */
-		foreach ($links as $label => $url) { $wp_admin_bar->add_menu( array( 'id' => 'utmce2', 'title' => $label, 'href' => $path . '/wp-admin/admin.php?page=ultimate-tinymce', 'parent' => 'jwl_links' )); }
-	}
-}
 
 // Set our language localization folder (used for adding translations)
 function jwl_ultimate_tinymce() {
@@ -268,17 +155,6 @@ function register_options_button_group_two() {
 }
 add_action('admin_init', 'register_options_button_group_two');
 
-function register_options_other_plugins_buttons() {
-	
-	add_settings_section('jwl_setting_section9', '', 'jwl_setting_section_callback_function9', 'jwl_options_group9');
-	
-	// Register Settings for Other Plugins Buttons
-	add_settings_field('jwl_wp_photo_album_field_id', __('WP Photo Album Plus','jwl-ultimate-tinymce'), 'jwl_wp_photo_album_callback_function', 'jwl_options_group9', 'jwl_setting_section9');
-	
-	register_setting('jwl_options_group9','jwl_options_group9');
-}
-add_action('admin_init', 'register_options_other_plugins_buttons');
-
 function register_options_misc_features() {
 	
 	add_settings_section('jwl_setting_section3', '', 'jwl_setting_section_callback_function3', 'jwl_options_group3');
@@ -304,6 +180,7 @@ function register_options_admin() {
 	add_settings_section('jwl_setting_section4', '', 'jwl_setting_section_callback_function4', 'jwl_options_group4');
 	
 	// Register Settings for Admin Options
+	add_settings_field('jwl_dev_credit', __('Developer Credit','jwl-ultimate-tinymce'), 'jwl_dev_credit_callback_function', 'jwl_options_group4', 'jwl_setting_section4'); 
 	add_settings_field('jwl_tinymce_add_stylesheet', __('Load editor-style.css file','jwl-ultimate-tinymce'), 'jwl_tinymce_add_stylesheet_callback_function', 'jwl_options_group4', 'jwl_setting_section4'); 
 	add_settings_field('jwl_tinymce_excerpt', __('Enable Ultimate Tinymce Excerpt Area','jwl-ultimate-tinymce'), 'jwl_tinymce_excerpt_callback_function', 'jwl_options_group4', 'jwl_setting_section4'); 
 	add_settings_field('jwl_hide_html_tab', __('Disable content editor TEXT tab','jwl-ultimate-tinymce'), 'jwl_hide_html_tab_callback_function', 'jwl_options_group4', 'jwl_setting_section4'); 

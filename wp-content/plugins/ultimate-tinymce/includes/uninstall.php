@@ -13,6 +13,7 @@ function ultimate_tinymce_uninstall() {
 	delete_option('jwl_options_group9','jwl_options_group9');
 	delete_option('jwl_options_group3','jwl_options_group3');
 	delete_option('jwl_options_group4','jwl_options_group4');
+	delete_option('jwl_utmce_load_defaults', 'jwl_utmce_load_defaults');
  
     // Do not change (this deactivates the plugin)
     $current = get_option('active_plugins');

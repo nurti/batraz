@@ -66,5 +66,3 @@ Batraz.container_spinner_loading_class = '_btz-ajax-loading';
    }
    
 })(jQuery);
-
-

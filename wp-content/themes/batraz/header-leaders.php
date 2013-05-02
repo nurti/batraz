@@ -14,7 +14,7 @@
                         <?php foreach ($pageposts as $post):  ?>
                             <?php setup_postdata($post); ?>
                             <p>
-                                <a href="<?php the_permalink($post->ID); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'twentytwelve' ), the_title_attribute( 'echo=0' ) ) ); ?>"><?php echo get_batraz_item_thumbnail(); ?></a>
+                                <a href="<?php the_permalink($post->ID); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'twentytwelve' ), the_title_attribute( 'echo=0' ) ) ); ?>"><?php echo get_batraz_item_thumbnail(get_the_ID()); ?></a>
                                 <a href="<?php echo get_term_link( $post->slug, $slug ); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'twentytwelve' ), $post->term_name ) ); ?>"  rel="bookmark"><?php echo $post->term_name; ?></a>
                             </p>
                          <?php endforeach; ?>

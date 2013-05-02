@@ -9,15 +9,44 @@
   background-color:  #feeebd;
 }
 
-/*----------------------------------------------------------------------------*/
-/*                  LEADERS BUTTONS( 32 x 46 )  
-/*-----------------------------------------------------------------------------*/
-.leaders-prev span {
-    background: url('images/previous.png') no-repeat;;
+
+/*---------------------------------------------------------------------------
+        BUTTONS NAV SLIDE( 32 x 46 )  
+-----------------------------------------------------------------------------*/
+
+.leaders-prev span, .flickr-sets-prev span , .flickr-photos-prev span{
+    background: url('images/previous-black.png') no-repeat;;
 }
 
-.leaders-next span {
-    background: url('images/next.png') no-repeat;;
+.leaders-next span, .flickr-sets-next span , .flickr-photos-next span {
+    background: url('images/next-black.png') no-repeat;;
 }
 
+nav.nav-single-otp .nav-single-otp-prev a span{
+    background: url('images/previous-black.png') no-repeat;;
+}
 
+nav.nav-single-otp .nav-single-otp-next a span{
+    background: url('images/next-black.png') no-repeat;;
+}
+
+/*---------------------------------------------------------------------------
+        FLICKR
+-----------------------------------------------------------------------------*/
+.flickr-sets .flickr-sets-wrapper .Sets .SetCase{
+    padding-top:7px;
+    width: 91px;
+    height: 95px;
+    background: url(images/set_case.gif) no-repeat;
+}
+
+/*---------------------------------------------------------------------------
+        CROSS POST
+-----------------------------------------------------------------------------*/
+.cross-post {
+        border-color: #3d3d3d;
+}
+
+.cross-post-list > div:first-child {
+        border-color: #3d3d3d;
+}

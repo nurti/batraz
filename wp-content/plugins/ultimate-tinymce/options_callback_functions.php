@@ -10,9 +10,6 @@
  function jwl_setting_section_callback_function8() {
  	_e('<p><strong>Get detailed help for each feature from the <a target="_blank" href="http://utmce.joshlobe.com/other-plugin-features/">Ultimate Tinymce Website</a></strong>.</p><p>Over-ride the settings for the content editor (tinymce).</p><p>Consider this a "last resort".  If nothing else works at making the content editor replicate the front end of the website... these settings will certainly do the trick.</p><br /><br />','jwl-ultimate-tinymce');
  }
- function jwl_setting_section_callback_function9() {
- 	_e('These options will support other plugins\' buttons, if installed.','jwl-ultimate-tinymce');
- }
  function jwl_setting_section_callback_function3() {
  	_e('<p><strong>Get detailed help for each feature from the <a target="_blank" href="http://utmce.joshlobe.com/other-plugin-features/">Ultimate Tinymce Website</a></strong>.</p>','jwl-ultimate-tinymce');
  }
@@ -894,30 +891,6 @@
 			}
 			echo "</select>";
  }
- 
-// Callback Functions for Other Plugin Buttons
-
- function jwl_wp_photo_album_callback_function() {
-	 $options = get_option('jwl_options_group9');
-	if (is_plugin_active('wp-photo-album-plus/wppa.php')) {
- 	echo '<input name="jwl_options_group9[jwl_wp_photo_album_field_id]" id="wp_photo_album" type="checkbox" value="1" class="three" ' . checked( 1, isset($options['jwl_wp_photo_album_field_id']), false ) . ' /> '; ?><label for="wp_photo_album"><span></span></label><?php
-	?><img title="WPPA+ Photo Album" src="<?php echo plugin_dir_url( __FILE__ ) ?>img/wppa.png" style="margin-left:10px;margin-bottom:-5px;" /><?php
-			if (isset($options['jwl_wp_photo_album_dropdown'])) {
-			$options_wp_photo_album = $options['jwl_wp_photo_album_dropdown'];
-			}	
-			$items_wp_photo_album = array("Row 1", "Row 2", "Row 3", "Row 4");
-			echo "<select class='actionList3' id='row' style='width:80px;margin-left:82px;' name='jwl_options_group9[jwl_wp_photo_album_dropdown][row]'>";
-			foreach($items_wp_photo_album as $item_wp_photo_album) {
-				$selected_wp_photo_album = ($options_wp_photo_album['row']==$item_wp_photo_album) ? 'selected="selected"' : '';
-				echo "<option value='$item_wp_photo_album' $selected_wp_photo_album>$item_wp_photo_album</option>";
-			}
-			echo "</select>";
-	} else {
-	echo '<em>';
-	_e('Not Installed','jwl-ultimate-tinymce');
-	echo '</em>';
- 	}
- }
 
 // *********************************************************
 //
@@ -1007,6 +980,11 @@
  } 
  
 // Functions for Admin Panel Options
+function jwl_dev_credit_callback_function() {
+	 $options = get_option('jwl_options_group4');
+	echo '<input name="jwl_options_group4[jwl_dev_credit]" id="jwl_dev_credit" type="checkbox" value="1" class="five" ' . checked( 1, isset($options['jwl_dev_credit']), false ) . ' /> '; ?><label for="jwl_dev_credit"><span></span></label><?php
+	?><span style="margin-left:15px;"><em><?php _e('Gives credit to the developer in form of a hidden link.','jwl-ultimate-tinymce'); ?></em><?php
+}
 function jwl_tinymce_add_stylesheet_callback_function() {
 	 $options = get_option('jwl_options_group4');
 	echo '<input name="jwl_options_group4[jwl_tinymce_add_stylesheet]" id="jwl_tinymce_add_stylesheet" type="checkbox" value="1" class="five" ' . checked( 1, isset($options['jwl_tinymce_add_stylesheet']), false ) . ' /> '; ?><label for="jwl_tinymce_add_stylesheet"><span></span></label><?php

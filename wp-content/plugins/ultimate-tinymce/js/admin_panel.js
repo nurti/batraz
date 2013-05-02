@@ -1,5 +1,35 @@
 //<![CDATA[ 
 
+function get_radio_value() {
+	var inputs = document.getElementsByName("defaults_load");
+	for (var i = 0; i < inputs.length; i++) {
+	  if (inputs[i].checked) {
+		return inputs[i].value;
+	  }
+	  else {
+		return 'none';
+	  }
+	}
+  }
+
+function jwlDefaults()
+{
+   var setting = get_radio_value();
+   var credit = document.getElementById('credit');
+	   if (credit.checked){
+		   var credit2 = 'true';
+	   } else {
+		   var credit2 = 'false';
+	   }
+   var beautify = document.getElementById('beautify');
+       if (beautify.checked){
+		   var beautify2 = 'true';
+	   } else {
+		   var beautify2 = 'false';
+	   }
+   location.href='admin.php?page=ultimate-tinymce&dontshowpopup=1&defaults='+setting+'&credit='+credit2+'&beautify='+beautify2;
+}
+
 // Used to set the checkboxes for buttons group 1
 jQuery(document).ready( 
 	function($) { 

@@ -560,14 +560,14 @@ Batraz.post =(function($){
         makePopup: function(){
             var rowIdDiv, rowTitleDiv,rowId, rowTitle;
             
-            this.popup = $('<div></div>').attr('id', 'btz-popup-post').appendTo('body');
+            this.popup = $('<div></div>').attr('id', 'btz-popup-post').addClass('btz-popup-post').appendTo('body');
     
-            this.postOptions = $('<div></div>').attr('id', 'post-options').appendTo(this.popup);
+            this.postOptions = $('<div></div>').attr('id', 'post-options').addClass('post-options').appendTo(this.popup);
            
             rowIdDiv = $('<div></div>').appendTo(this.postOptions);
             rowId = $('<label></label>').appendTo(rowIdDiv);
             $('<span>Post ID</span>').appendTo(rowId);
-            this.currentID =$('<span></span>').addClass('post-values').appendTo(rowId);
+            this.currentID =$('<span />').addClass('post-values').appendTo(rowId);
     
     
             rowTitleDiv = $('<div></div>').appendTo(this.postOptions);
@@ -589,7 +589,7 @@ Batraz.post =(function($){
                 value: false
             });
             
-            this.pagination = $('<div></div>').attr('id', 'btz-pagination').appendTo(this.popup);
+            this.pagination = $('<div></div>').attr('id', 'btz-pagination').addClass('btz-pagination').appendTo(this.popup);
             this.list = $('<div></div>').attr({
                 'id' : 'btz-recent-results', 
                 'class':'query-results'
@@ -734,9 +734,9 @@ Batraz.panels =(function($){
         makePopup: function(){
             
             this.popup.empty();
-            this.popup = $('<div></div>').attr('id', 'btz-popup-panels').appendTo('body');
+            this.popup = $('<div></div>').attr('id', 'btz-popup-panels').addClass('btz-popup-panels'). appendTo('body');
     
-            this.postOptions = $('<div></div>').attr('id', 'post-options-panels').appendTo(this.popup);
+            this.postOptions = $('<div></div>').attr('id', 'post-options-panels').addClass('post-options-panels').appendTo(this.popup);
            
             this.makeControls();
             

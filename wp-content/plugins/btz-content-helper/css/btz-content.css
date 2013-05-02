@@ -34,7 +34,7 @@
 /*    height:128px; */
 }
 
-#btz-popup-post, #btz-popup-panels{
+.btz-popup-post, .btz-popup-panels{
     line-height: 20px;
     line-height: 1.4285rem;
     line-height: 1.428rem;
@@ -42,7 +42,7 @@
     font-size: 0.857rem;
 }
 
-#btz-popup-post #post-options, #btz-popup-panels #post-options-panels {
+.btz-popup-post .post-options, .btz-popup-panels .post-options-panels {
     
     padding: 10px 0 14px;
     padding: 0.714rem 0 1rem;
@@ -51,7 +51,7 @@
     margin: 0 0.428rem 1rem;
 }
 
-#btz-popup-post #post-options label span{
+.btz-popup-post .post-options label span{
     display: inline-block;
     min-width: 80px;
     min-width: 5.7142rem;
@@ -61,7 +61,7 @@
    
 }
 
-#btz-popup-post #post-options label span.post-values{
+.btz-popup-post .post-options label span.post-values{
    background-color: #fff; 
    text-align: left; 
    border-radius: 3px;
@@ -71,7 +71,7 @@
    
 }
 
-#btz-popup-post .query-results {
+.btz-popup-post .query-results {
     border: 1px #dfdfdf solid;
     margin: 0 5px 5px;
     margin: 0 0.357rem 0.357rem;
@@ -82,7 +82,7 @@
     position: relative;
 }
 
-#btz-popup-post li{
+.btz-popup-post li{
     clear: both;
     margin-bottom: 0;
     border-bottom: 1px solid #f1f1f1;
@@ -96,12 +96,12 @@
     background-color: #fcfcfc;
 }
 
-#btz-popup-post li.selected {
+.btz-popup-post li.selected {
     background: #ddd;
     color: #333;
 }
 
-#btz-popup-post #btz-pagination li{
+.btz-popup-post .btz-pagination li{
     display:inline-block;
     margin-right: 4px;
     border-radius: 3px;
@@ -109,12 +109,12 @@
 
 }
 
-#btz-popup-post #btz-pagination li.pageLoaded{
+.btz-popup-post .btz-pagination li.pageLoaded{
     background: #ddd;
     color: #333;
 }
 
-#btz-popup-post .btz-propsc {
+.btz-popup-post .btz-propsc {
 width: auto;
 padding: 3px 0 0;
 margin: 0 0 0 87px;
@@ -122,7 +122,7 @@ font-size: 11px;
 font-size: 0.7857rem;
 }
 
-#btz-popup-post .btz-propsc label, #btz-popup-panels .btz-propsc-panels label {
+.btz-popup-post .btz-propsc label, .btz-popup-panels .btz-propsc-panels label {
     display: block;
 }
 

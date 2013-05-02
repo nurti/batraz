@@ -1,0 +1,3921 @@
+[21-Apr-2013 09:37:00 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:37:00 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:37:00 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+    [2] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_hide
+    [label] => Nascondi menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_hide
+    [label] => Nascondi menu main
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_have_home
+    [label] => Item home su menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_have_home
+    [label] => Item home su menu primary
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_logo_url
+    [label] => URL logo
+    [type] => text
+    [usemedia] => /js/media.js
+    [class] => url-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_copyright
+    [label] => Copyright
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_annotation
+    [label] => Annotazione
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style
+    [label] => Color-Style Tema
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_eat
+    [label] => Color-Style Single eat
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_post
+    [label] => Color-Style Single post
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_ppp
+    [label] => Numero leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_speed
+    [label] => Speed leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_taxonomies_hide
+    [label] => Nascondi tassonomie sul post
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_hide
+    [label] => Nascondi menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_hide
+    [label] => Nascondi menu main
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_have_home
+    [label] => Item home su menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_have_home
+    [label] => Item home su menu primary
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_logo_url
+    [label] => URL logo
+    [type] => text
+    [usemedia] => /js/media.js
+    [class] => url-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_copyright
+    [label] => Copyright
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_annotation
+    [label] => Annotazione
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style
+    [label] => Color-Style Tema
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_eat
+    [label] => Color-Style Single eat
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_post
+    [label] => Color-Style Single post
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_ppp
+    [label] => Numero leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_speed
+    [label] => Speed leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_taxonomies_hide
+    [label] => Nascondi tassonomie sul post
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_hide
+    [label] => Nascondi menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_hide
+    [label] => Nascondi menu main
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_have_home
+    [label] => Item home su menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_have_home
+    [label] => Item home su menu primary
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_logo_url
+    [label] => URL logo
+    [type] => text
+    [usemedia] => /js/media.js
+    [class] => url-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_copyright
+    [label] => Copyright
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_annotation
+    [label] => Annotazione
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style
+    [label] => Color-Style Tema
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_eat
+    [label] => Color-Style Single eat
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_post
+    [label] => Color-Style Single post
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_ppp
+    [label] => Numero leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_speed
+    [label] => Speed leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:37:00 UTC] BTZ_Option_element Object
+(
+    [name] => btz_taxonomies_hide
+    [label] => Nascondi tassonomie sul post
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:44:38 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:44:38 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:44:38 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:44:38 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:44:38 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:44:38 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:44:38 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:44:38 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:44:38 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:44:38 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:44:38 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:44:38 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:44:38 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+    [2] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_hide
+    [label] => Nascondi menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_hide
+    [label] => Nascondi menu main
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_have_home
+    [label] => Item home su menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_have_home
+    [label] => Item home su menu primary
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_logo_url
+    [label] => URL logo
+    [type] => text
+    [usemedia] => /js/media.js
+    [class] => url-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_copyright
+    [label] => Copyright
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_annotation
+    [label] => Annotazione
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style
+    [label] => Color-Style Tema
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_eat
+    [label] => Color-Style Single eat
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_post
+    [label] => Color-Style Single post
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_ppp
+    [label] => Numero leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_speed
+    [label] => Speed leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_taxonomies_hide
+    [label] => Nascondi tassonomie sul post
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_hide
+    [label] => Nascondi menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_hide
+    [label] => Nascondi menu main
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_have_home
+    [label] => Item home su menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_have_home
+    [label] => Item home su menu primary
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_logo_url
+    [label] => URL logo
+    [type] => text
+    [usemedia] => /js/media.js
+    [class] => url-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_copyright
+    [label] => Copyright
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_annotation
+    [label] => Annotazione
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style
+    [label] => Color-Style Tema
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_eat
+    [label] => Color-Style Single eat
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_post
+    [label] => Color-Style Single post
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_ppp
+    [label] => Numero leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_speed
+    [label] => Speed leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_taxonomies_hide
+    [label] => Nascondi tassonomie sul post
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_hide
+    [label] => Nascondi menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_hide
+    [label] => Nascondi menu main
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_have_home
+    [label] => Item home su menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_have_home
+    [label] => Item home su menu primary
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_logo_url
+    [label] => URL logo
+    [type] => text
+    [usemedia] => /js/media.js
+    [class] => url-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_copyright
+    [label] => Copyright
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_annotation
+    [label] => Annotazione
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style
+    [label] => Color-Style Tema
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_eat
+    [label] => Color-Style Single eat
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_post
+    [label] => Color-Style Single post
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_ppp
+    [label] => Numero leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_speed
+    [label] => Speed leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:44:39 UTC] BTZ_Option_element Object
+(
+    [name] => btz_taxonomies_hide
+    [label] => Nascondi tassonomie sul post
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:45:29 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:29 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:29 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:29 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:29 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:29 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:29 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:29 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:29 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:29 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:29 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:45:29 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:45:29 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+    [2] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:45:33 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:45:33 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:45:33 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+    [2] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_hide
+    [label] => Nascondi menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_hide
+    [label] => Nascondi menu main
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_have_home
+    [label] => Item home su menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_have_home
+    [label] => Item home su menu primary
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_logo_url
+    [label] => URL logo
+    [type] => text
+    [usemedia] => /js/media.js
+    [class] => url-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_copyright
+    [label] => Copyright
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_annotation
+    [label] => Annotazione
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style
+    [label] => Color-Style Tema
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_eat
+    [label] => Color-Style Single eat
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_post
+    [label] => Color-Style Single post
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_ppp
+    [label] => Numero leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_speed
+    [label] => Speed leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_taxonomies_hide
+    [label] => Nascondi tassonomie sul post
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_hide
+    [label] => Nascondi menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_hide
+    [label] => Nascondi menu main
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_have_home
+    [label] => Item home su menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_have_home
+    [label] => Item home su menu primary
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_logo_url
+    [label] => URL logo
+    [type] => text
+    [usemedia] => /js/media.js
+    [class] => url-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_copyright
+    [label] => Copyright
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_annotation
+    [label] => Annotazione
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style
+    [label] => Color-Style Tema
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_eat
+    [label] => Color-Style Single eat
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_post
+    [label] => Color-Style Single post
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_ppp
+    [label] => Numero leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_speed
+    [label] => Speed leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_taxonomies_hide
+    [label] => Nascondi tassonomie sul post
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_hide
+    [label] => Nascondi menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_hide
+    [label] => Nascondi menu main
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_have_home
+    [label] => Item home su menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_have_home
+    [label] => Item home su menu primary
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_logo_url
+    [label] => URL logo
+    [type] => text
+    [usemedia] => /js/media.js
+    [class] => url-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_copyright
+    [label] => Copyright
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_annotation
+    [label] => Annotazione
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style
+    [label] => Color-Style Tema
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_eat
+    [label] => Color-Style Single eat
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_post
+    [label] => Color-Style Single post
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_ppp
+    [label] => Numero leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_speed
+    [label] => Speed leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:45:33 UTC] BTZ_Option_element Object
+(
+    [name] => btz_taxonomies_hide
+    [label] => Nascondi tassonomie sul post
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:50:57 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:50:57 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:50:57 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+    [2] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_hide
+    [label] => Nascondi menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_hide
+    [label] => Nascondi menu main
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_have_home
+    [label] => Item home su menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_have_home
+    [label] => Item home su menu primary
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_logo_url
+    [label] => URL logo
+    [type] => text
+    [usemedia] => /js/media.js
+    [class] => url-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_copyright
+    [label] => Copyright
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_annotation
+    [label] => Annotazione
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style
+    [label] => Color-Style Tema
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_eat
+    [label] => Color-Style Single eat
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_post
+    [label] => Color-Style Single post
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_ppp
+    [label] => Numero leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_speed
+    [label] => Speed leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_taxonomies_hide
+    [label] => Nascondi tassonomie sul post
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_hide
+    [label] => Nascondi menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_hide
+    [label] => Nascondi menu main
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_have_home
+    [label] => Item home su menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_have_home
+    [label] => Item home su menu primary
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_logo_url
+    [label] => URL logo
+    [type] => text
+    [usemedia] => /js/media.js
+    [class] => url-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_copyright
+    [label] => Copyright
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_annotation
+    [label] => Annotazione
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style
+    [label] => Color-Style Tema
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_eat
+    [label] => Color-Style Single eat
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_post
+    [label] => Color-Style Single post
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_ppp
+    [label] => Numero leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_speed
+    [label] => Speed leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_taxonomies_hide
+    [label] => Nascondi tassonomie sul post
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_hide
+    [label] => Nascondi menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_hide
+    [label] => Nascondi menu main
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_have_home
+    [label] => Item home su menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_have_home
+    [label] => Item home su menu primary
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_logo_url
+    [label] => URL logo
+    [type] => text
+    [usemedia] => /js/media.js
+    [class] => url-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_copyright
+    [label] => Copyright
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_annotation
+    [label] => Annotazione
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style
+    [label] => Color-Style Tema
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_eat
+    [label] => Color-Style Single eat
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_post
+    [label] => Color-Style Single post
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_ppp
+    [label] => Numero leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_speed
+    [label] => Speed leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:50:57 UTC] BTZ_Option_element Object
+(
+    [name] => btz_taxonomies_hide
+    [label] => Nascondi tassonomie sul post
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:52:12 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:52:12 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:52:12 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+    [2] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_hide
+    [label] => Nascondi menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_hide
+    [label] => Nascondi menu main
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_have_home
+    [label] => Item home su menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_have_home
+    [label] => Item home su menu primary
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_logo_url
+    [label] => URL logo
+    [type] => text
+    [usemedia] => /js/media.js
+    [class] => url-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_copyright
+    [label] => Copyright
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_annotation
+    [label] => Annotazione
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style
+    [label] => Color-Style Tema
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_eat
+    [label] => Color-Style Single eat
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_post
+    [label] => Color-Style Single post
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_ppp
+    [label] => Numero leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_speed
+    [label] => Speed leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_taxonomies_hide
+    [label] => Nascondi tassonomie sul post
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_hide
+    [label] => Nascondi menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_hide
+    [label] => Nascondi menu main
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_have_home
+    [label] => Item home su menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_have_home
+    [label] => Item home su menu primary
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_logo_url
+    [label] => URL logo
+    [type] => text
+    [usemedia] => /js/media.js
+    [class] => url-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_copyright
+    [label] => Copyright
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_annotation
+    [label] => Annotazione
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style
+    [label] => Color-Style Tema
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_eat
+    [label] => Color-Style Single eat
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_post
+    [label] => Color-Style Single post
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_ppp
+    [label] => Numero leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_speed
+    [label] => Speed leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_taxonomies_hide
+    [label] => Nascondi tassonomie sul post
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_hide
+    [label] => Nascondi menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_hide
+    [label] => Nascondi menu main
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_have_home
+    [label] => Item home su menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_have_home
+    [label] => Item home su menu primary
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_logo_url
+    [label] => URL logo
+    [type] => text
+    [usemedia] => /js/media.js
+    [class] => url-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_copyright
+    [label] => Copyright
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_annotation
+    [label] => Annotazione
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style
+    [label] => Color-Style Tema
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_eat
+    [label] => Color-Style Single eat
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_post
+    [label] => Color-Style Single post
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_ppp
+    [label] => Numero leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_speed
+    [label] => Speed leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:52:12 UTC] BTZ_Option_element Object
+(
+    [name] => btz_taxonomies_hide
+    [label] => Nascondi tassonomie sul post
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:56:02 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] Array
+(
+    [0] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:56:02 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:56:02 UTC] Array
+(
+    [0] => Generale
+    [1] => Opzioni Leaders
+    [2] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_hide
+    [label] => Nascondi menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_hide
+    [label] => Nascondi menu main
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_have_home
+    [label] => Item home su menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_have_home
+    [label] => Item home su menu primary
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_logo_url
+    [label] => URL logo
+    [type] => text
+    [usemedia] => /js/media.js
+    [class] => url-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_copyright
+    [label] => Copyright
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_annotation
+    [label] => Annotazione
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style
+    [label] => Color-Style Tema
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_eat
+    [label] => Color-Style Single eat
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_post
+    [label] => Color-Style Single post
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_ppp
+    [label] => Numero leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_speed
+    [label] => Speed leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_taxonomies_hide
+    [label] => Nascondi tassonomie sul post
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_hide
+    [label] => Nascondi menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_hide
+    [label] => Nascondi menu main
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_have_home
+    [label] => Item home su menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_have_home
+    [label] => Item home su menu primary
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_logo_url
+    [label] => URL logo
+    [type] => text
+    [usemedia] => /js/media.js
+    [class] => url-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_copyright
+    [label] => Copyright
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_annotation
+    [label] => Annotazione
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style
+    [label] => Color-Style Tema
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_eat
+    [label] => Color-Style Single eat
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_post
+    [label] => Color-Style Single post
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_ppp
+    [label] => Numero leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_speed
+    [label] => Speed leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_taxonomies_hide
+    [label] => Nascondi tassonomie sul post
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Tassonomie
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_hide
+    [label] => Nascondi menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_hide
+    [label] => Nascondi menu main
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_topright_have_home
+    [label] => Item home su menu top
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_primary_have_home
+    [label] => Item home su menu primary
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_logo_url
+    [label] => URL logo
+    [type] => text
+    [usemedia] => /js/media.js
+    [class] => url-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_copyright
+    [label] => Copyright
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_annotation
+    [label] => Annotazione
+    [type] => text
+    [usemedia] => 
+    [class] => long-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style
+    [label] => Color-Style Tema
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_eat
+    [label] => Color-Style Single eat
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_color_style_single_post
+    [label] => Color-Style Single post
+    [type] => select
+    [usemedia] => 
+    [class] => select-color-style
+    [values] => Array
+        (
+            [0] => black-tie
+            [1] => btz-sunny
+            [2] => ui-darkness
+        )
+
+    [tab] => Generale
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_ppp
+    [label] => Numero leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_leaders_speed
+    [label] => Speed leaders
+    [type] => text
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Leaders
+)
+
+[21-Apr-2013 09:56:02 UTC] BTZ_Option_element Object
+(
+    [name] => btz_taxonomies_hide
+    [label] => Nascondi tassonomie sul post
+    [type] => checkbox
+    [usemedia] => 
+    [class] => regular-text
+    [values] => Array
+        (
+        )
+
+    [tab] => Opzioni Tassonomie
+)
+

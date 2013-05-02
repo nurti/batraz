@@ -14,10 +14,10 @@
 add_action('admin_enqueue_scripts', 'batraz_script_load');
 
 function batraz_script_load($hook) {
-    //  error_log(print_r($hook, true)); 
-//    if ($hook != 'plugins_page_otp-setting' && $hook != 'post.php' ) {
-//        return;
-//    }
+
+    if (!in_array($hook, array('plugins_page_otp-setting', 'post.php', 'post-new.php'))) {
+        return;
+    }
     wp_enqueue_script('jquery');
     wp_enqueue_script('jquery-ui-core');
     wp_enqueue_script('jquery-ui-widget');
@@ -36,9 +36,9 @@ add_action('wp_enqueue_scripts', 'btz_shared_scripts');
 
 function btz_shared_scripts() {
 
-//    wp_register_script('btz-common', plugins_url('/js/common/btz-common.js', __FILE__), array('jquery', 'jquery-ui-progressbar'));
-//    wp_enqueue_script('btz-common');
-//
+    wp_register_script('btz-common', plugins_url('/js/common/btz-common.js', __FILE__), array('jquery', 'jquery-ui-progressbar'));
+    wp_enqueue_script('btz-common');
+
 
     wp_register_script('fancybox', plugins_url('/js/fancybox/jquery.fancybox.pack.js', __FILE__), array('jquery'));
     wp_enqueue_script('fancybox');

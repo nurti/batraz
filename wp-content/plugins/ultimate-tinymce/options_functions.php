@@ -711,30 +711,6 @@ if ($jwl_nextpage_dropdown2 == 'Row 3') { add_filter("mce_buttons_3", "tinymce_a
 if ($jwl_nextpage_dropdown2 == 'Row 4') { add_filter("mce_buttons_4", "tinymce_add_button_nextpage"); }
 }
 
-// ******************************************************
-//
-//
-// Functions for Other Plugin Buttons
-// Function used to check if a plugin is active or not.
-function jwl_is_plugin_active( $plugin ) {
-    return in_array( $plugin, (array) get_option( 'active_plugins', array() ) );
-}
-
-if (jwl_is_plugin_active('wp-photo-album-plus/wppa.php')) {
-	function tinymce_add_button_wp_photo_album($buttons) { 
-	$options = get_option('jwl_options_group9');
-	$jwl_wp_photo_album = isset($options['jwl_wp_photo_album_field_id']); 
-	if ($jwl_wp_photo_album == "1") $buttons[] = 'mygallery_button'; return $buttons; } 
-	$options2 = get_option('jwl_options_group9');
-	if (isset($options2['jwl_wp_photo_album_dropdown']['row'])) {
-	$jwl_wp_photo_album_dropdown2 = $options2['jwl_wp_photo_album_dropdown']['row'];
-	if ($jwl_wp_photo_album_dropdown2 == 'Row 1') { add_filter("mce_buttons", "tinymce_add_button_wp_photo_album"); } 
-	if ($jwl_wp_photo_album_dropdown2 == 'Row 2') { add_filter("mce_buttons_2", "tinymce_add_button_wp_photo_album"); } 
-	if ($jwl_wp_photo_album_dropdown2 == 'Row 3') { add_filter("mce_buttons_3", "tinymce_add_button_wp_photo_album"); }
-	if ($jwl_wp_photo_album_dropdown2 == 'Row 4') { add_filter("mce_buttons_4", "tinymce_add_button_wp_photo_album"); }
-	}
-}
-
 
 
 // ******************************************************
@@ -813,53 +789,10 @@ function jwl_mce_external_plugins( $jwl_plugin_array ) {
 }
 add_filter( 'mce_external_plugins', 'jwl_mce_external_plugins' );
 
-// Function to hide the HTML tab from the content editor.
-global $pagenow;
-if ($pagenow == 'post.php' || $pagenow == 'post-new.php' || ($pagenow == "admin.php" && (isset($_GET['page'])) == 'cleverness-to-do-list') || ($pagenow == "options-general.php" && (isset($_GET['page'])) == 'ultimate-tinymce')) {
-	$options_html = get_option('jwl_options_group4');
-	$jwl_html = isset($options_html['jwl_hide_html_tab']); 
-	if ($jwl_html == "1") {
-		function jwl_hide_on_todo() {
-			?><style type="text/css"> #excerpt-html { display: none !important; } #content-id-html { display: none !important; }  #content-html { display: none !important; } #clevernesstododescription-html { display: none !important; }</style><?php
-		}
-		add_filter('admin_head','jwl_hide_on_todo');
-	}
-}
-
-// Function for removing force reload of tinymce editor
-function jwl_tiny_mce_version($version) { // trick tinymce version number to force update and clear cache
-	return ++$version;
-}
-add_filter('tiny_mce_version', 'jwl_tiny_mce_version');
-$options7 = get_option('jwl_options_group4');
-$jwl_tinymce_refresh = isset($options7['jwl_tinymce_refresh']);
-if ($jwl_tinymce_refresh == "1"){
-	remove_filter('tiny_mce_version', 'jwl_tiny_mce_version');
-}
-
 // Functions for miscellaneous options and features
-// This is a "partial-global" (yes, my term) variable used for the miscellaneous options and features section
-$options4 = get_option('jwl_options_group3');
-
-// Function for NextPage Feature
-/*
-$jwl_tinymce_nextpage = isset($options4['jwl_tinymce_nextpage_field_id']);
-if ($jwl_tinymce_nextpage == "1"){
-    add_filter('mce_buttons','jwl_nextpage_button');
-    function jwl_nextpage_button($mce_buttons) {
-    $pos = array_search('wp_more',$mce_buttons,true);
-    if ($pos !== false) {
-        $tmp_buttons = array_slice($mce_buttons, 0, $pos+1);
-        $tmp_buttons[] = 'wp_page';
-        $mce_buttons = array_merge($tmp_buttons, array_slice($mce_buttons, $pos+1));
-    }
-    return $mce_buttons;
-    }
-}
-*/
-
 // Function to show post/page id in admin column area
-$jwl_postid = isset($options4['jwl_postid_field_id']);
+$options_postid = get_option('jwl_options_group3');
+$jwl_postid = isset($options_postid['jwl_postid_field_id']);
 if ($jwl_postid == "1"){
    		function jwl_posts_columns_id($defaults){
 			$defaults['wps_post_id'] = __('ID');
@@ -885,7 +818,8 @@ if ($jwl_shortcode == "1"){
 }
 
 // Adding PHP text widgets
-$jwl_php_widget = isset($options4['jwl_php_widget_field_id']);
+$options_php_widget = get_option('jwl_options_group3');
+$jwl_php_widget = isset($options_php_widget['jwl_php_widget_field_id']);
 if ($jwl_php_widget == "1"){
 
 class jwl_PHP_Code_Widget extends WP_Widget {
@@ -941,7 +875,8 @@ add_action('widgets_init', create_function('', 'return register_widget("jwl_PHP_
 }
 
 // Enable the linebreak shortcode
-$jwl_linebreak = isset($options4['jwl_linebreak_field_id']);
+$options_linebreak = get_option('jwl_options_group3');
+$jwl_linebreak = isset($options_linebreak['jwl_linebreak_field_id']);
 if ($jwl_linebreak == "1"){
 	//[break]
 	function jwl_insert_linebreak( $atts ){
@@ -950,76 +885,9 @@ if ($jwl_linebreak == "1"){
 	add_shortcode( 'break', 'jwl_insert_linebreak' );
 }
 
-// Add button and array for advanced insert/edit link button.
-/*
-$jwl_defaults = isset($options4['jwl_defaults_field_id']);
-if ($jwl_defaults == "1") {
-	
-	function disable_advanced_link_array( $plugin_array ) {
-		$options5 = get_option('jwl_options_group3');
-		$jwl_defaults = $options5['jwl_defaults_field_id'];
-		if ($jwl_defaults == "1") {
-		$plugin_array['advlink'] = plugin_dir_url(__FILE__) . 'advlink/editor_plugin.js';
-		return $plugin_array;
-		}
-	}
-	add_filter( 'mce_external_plugins', 'disable_advanced_link_array' );
-	
-	function jwl_advlink_button($mce_buttons2) {
-		$options6 = get_option('jwl_options_group3');
-		$jwl_defaults2 = $options6['jwl_defaults_field_id'];
-			if ($jwl_defaults2 == "1") {
-			$pos = array_search('link',$mce_buttons2,true);
-				if ($pos !== false) {
-				 $tmp_buttons2 = array_slice($mce_buttons2, 0, $pos+1);
-				 $tmp_buttons2[] = 'advlink';
-				 $mce_buttons2 = array_merge($tmp_buttons2, array_slice($mce_buttons2, $pos+1));
-				}
-			return $mce_buttons2;
-			}
-	}
-	add_filter('mce_buttons','jwl_advlink_button');
-}
-*/
-
-// User option for adding the clear div buttons in the visual editor
-/*
-function tinymce_add_button_div($buttons) {
-$options = get_option('jwl_options_group3');
-$jwl_div = isset($options['jwl_div_field_id']);
-if ($jwl_div == "1")
-array_push($buttons, "separator", "clearleft","clearright","clearboth");
-   return $buttons;
-}
-add_filter('mce_buttons', 'tinymce_add_button_div');
-*/
-
-// Function to remove wpautop
-$jwl_autop = isset($options4['jwl_autop_field_id']);
-if ($jwl_autop == "1"){
-	remove_filter ('the_content', 'wpautop');
-	remove_filter ('the_content', 'wptexturize');
-	
-	function jwl_remove_wpautop_tinymce($remove_Tiny) {
-		$remove_Tiny['wpautop'] = false;
-		
-		return $remove_Tiny;
-	}
-	add_filter('tiny_mce_before_init','jwl_remove_wpautop_tinymce');
-}
-
-// User option for adding a signoff shortcode for tinymce visual editor (Goes with custom message box below)
-function jwl_sign_off_text() {
-	$options = get_option('jwl_options_group3');  
-	if (isset($options['jwl_signoff_field_id'])) {
-		$jwl_signoff = $options['jwl_signoff_field_id'];
-	}
-    return $jwl_signoff;  
-} 
-add_shortcode('signoff', 'jwl_sign_off_text');
-
 // Add column shortcodes for tinymce editor
-$jwl_columns = isset($options4['jwl_columns_field_id']);
+$options_columns = get_option('jwl_options_group3');
+$jwl_columns = isset($options_columns['jwl_columns_field_id']);
 if ($jwl_columns == "1"){
 	
 	function jwl_one_third( $atts, $content = null ) { return '<div class="jwl_one_third">' . do_shortcode($content) . '</div>'; }
@@ -1079,8 +947,53 @@ if ($jwl_columns == "1"){
 	add_action('wp_print_styles', 'jwl_column_stylesheet');
 }
 
+// Function to remove wpautop
+$options_autop = get_option('jwl_options_group3');
+$jwl_autop = isset($options_autop['jwl_autop_field_id']);
+if ($jwl_autop == "1"){
+	remove_filter ('the_content', 'wpautop');
+	remove_filter ('the_content', 'wptexturize');
+	
+	function jwl_remove_wpautop_tinymce($remove_Tiny) {
+		$remove_Tiny['wpautop'] = false;
+		
+		return $remove_Tiny;
+	}
+	add_filter('tiny_mce_before_init','jwl_remove_wpautop_tinymce');
+}
+
+// Add p and br buttons to html editor
+add_action('admin_print_footer_scripts','jwl_ult_quicktags');
+function jwl_ult_quicktags() {
+//wp_enqueue_script( 'quicktags' );
+	?>
+	<script type="text/javascript" charset="utf-8">
+	/* Adding Quicktag buttons to the editor Wordpress ver. 3.3 and above
+	* - Button HTML ID (required)
+	* - Button display, value="" attribute (required)
+	* - Opening Tag (required)
+	* - Closing Tag (required)
+	* - Access key, accesskey="" attribute for the button (optional)
+	* - Title, title="" attribute (optional)
+	* - Priority/position on bar, 1-9 = first, 11-19 = second, 21-29 = third, etc. (optional)
+	*/
+	if ( typeof (QTags) != 'undefined' ) {
+		QTags.addButton( 'jwl_paragraph', 'p', '<p class="none">', '</p>', 'p', 'Insert paragraph tags', '1' );
+		QTags.addButton( 'jwl_linebreak', 'br','<br class="none" />\n', '', 'br', 'Insert a linebreak', '2' );
+	}
+	</script>
+	<?php
+}
+// Here we will remove the above tags if the user opts to do so
+$options_remove_pbr_quicktags = get_option('jwl_options_group3');
+$jwl_pbr_quicktags = isset($options_remove_pbr_quicktags['jwl_remove_pbr_field_id']);
+if($jwl_pbr_quicktags == '1') {
+	remove_action('admin_print_footer_scripts','jwl_ult_quicktags');
+}
+
 // Class and Functions for Cursor Position in Editor
-$jwl_cursor = isset($options4['jwl_cursor_field_id']);
+$options_cursor = get_option('jwl_options_group3');
+$jwl_cursor = isset($options_cursor['jwl_cursor_field_id']);
 if ($jwl_cursor == "1") {
 	global $pagenow;
 	// Make sure we only add to posts, pages, or custom post types
@@ -1141,9 +1054,48 @@ if ($jwl_cursor == "1") {
 	}
 }
 
+// User option for adding a signoff shortcode for tinymce visual editor
+function jwl_sign_off_text() {
+	$options = get_option('jwl_options_group3');  
+	if (isset($options['jwl_signoff_field_id'])) {
+		$jwl_signoff = $options['jwl_signoff_field_id'];
+	}
+    return $jwl_signoff;  
+} 
+add_shortcode('signoff', 'jwl_sign_off_text');
+
+
+// Functions for Admin Options
+// Function for Developer Credit
+$options_dev_credit = get_option('jwl_options_group4');
+$jwl_dev_credit = isset($options_dev_credit['jwl_dev_credit']);
+if ($jwl_dev_credit == "1") {
+	function jwl_dev_credit() {
+		include WP_CONTENT_DIR . '/plugins/ultimate-tinymce/includes/dev_credit.php';
+	}
+	add_action('wp_footer', 'jwl_dev_credit');
+}
+
+// Functions to load stylesheet from front-end of website into ultimate tinymce content editor.
+$options_style = get_option('jwl_options_group4');
+$jwl_style = isset($options_style['jwl_tinymce_add_stylesheet']);
+if ($jwl_style == "1") {
+	
+	function jwl_add_stylesheet($jwl_style_init) {	
+		$style_uri = get_stylesheet_directory_uri().'/editor-style.css';	
+		if (empty($jwl_style_init['content_css'])) {
+			$jwl_style_init['content_css'] = $style_uri;
+		} else {
+			$jwl_style_init['content_css'] = ','.$style_uri;
+		}	
+		return $jwl_style_init;
+	}
+	add_filter('tiny_mce_before_init', 'jwl_add_stylesheet');
+}
+
 // Functions for adding Ultimate Tinymce to Excerpt Area
-$options9 = get_option('jwl_options_group4');
-$jwl_tinymce_excerpt = isset($options9['jwl_tinymce_excerpt']);
+$options_excerpt = get_option('jwl_options_group4');
+$jwl_tinymce_excerpt = isset($options_excerpt['jwl_tinymce_excerpt']);
 if ($jwl_tinymce_excerpt == "1") {
 	add_action( 'admin_init', 'jwl_change_excerpt' );
 	function jwl_change_excerpt() {
@@ -1168,27 +1120,160 @@ if ($jwl_tinymce_excerpt == "1") {
 	}
 }
 
-// Functions to load stylesheet from front-end of website into ultimate tinymce content editor.
-$options10 = get_option('jwl_options_group4');
-$jwl_style = isset($options10['jwl_tinymce_add_stylesheet']);
-
-if ($jwl_style == "1") {
-	
-	function jwl_add_stylesheet($jwl_style_init) {
-		
-		$style_uri = get_stylesheet_directory_uri().'/editor-style.css';
-		
-		if (empty($jwl_style_init['content_css'])) {
-			$jwl_style_init['content_css'] = $style_uri;
-		} else {
-			$jwl_style_init['content_css'] = ','.$style_uri;
+// Function to hide the HTML tab from the content editor.
+global $pagenow;
+if ($pagenow == 'post.php' || $pagenow == 'post-new.php' || ($pagenow == "admin.php" && (isset($_GET['page'])) == 'cleverness-to-do-list') || ($pagenow == "options-general.php" && (isset($_GET['page'])) == 'ultimate-tinymce')) {
+	$options_html = get_option('jwl_options_group4');
+	$jwl_html = isset($options_html['jwl_hide_html_tab']); 
+	if ($jwl_html == "1") {
+		function jwl_hide_on_todo() {
+			?><style type="text/css"> #excerpt-html { display: none !important; } #content-id-html { display: none !important; }  #content-html { display: none !important; } #clevernesstododescription-html { display: none !important; }</style><?php
 		}
-		
-		return $jwl_style_init;
+		add_filter('admin_head','jwl_hide_on_todo');
 	}
-	add_filter('tiny_mce_before_init', 'jwl_add_stylesheet');
 }
 
+// Insert a dashboard Ultimate Tinymce Widget for RSS feed.
+$options_dashboard = get_option('jwl_options_group4');
+$jwl_dashboard = isset($options_dashboard['jwl_dashboard_widget']);
+if ($jwl_dashboard == '1') {
+	
+	add_action('wp_dashboard_setup', 'my_custom_dashboard_widgets');
+	function my_custom_dashboard_widgets() {
+	   global $wp_meta_boxes;
+	   wp_add_dashboard_widget('jwl_tinymce_dashboard_widget', 'Ultimate Tinymce RSS Feed', 'jwl_tinymce_widget', 'jwl_configure_widget');
+	}
+	
+	function jwl_tinymce_widget() {
+		$jwl_widgets = get_option( 'jwl_dashboard_options4' ); // Get the dashboard widget options
+		$jwl_widget_id = 'jwl_tinymce_dashboard_widget'; // This must be the same ID we set in wp_add_dashboard_widget
+		/* Check whether we have set the post count through the controls. If we didn't, set the default to 5 */
+		$jwl_total_items = 	isset( $jwl_widgets[$jwl_widget_id] ) && isset( $jwl_widgets[$jwl_widget_id]['items'] )
+							? absint( $jwl_widgets[$jwl_widget_id]['items'] ) : 5;
+		// Echo the output of the RSS Feed.
+		echo '<p style="border-bottom:#000 1px solid;">'; echo 'Showing ('.$jwl_total_items.') Posts'; echo '</p>';
+		echo '<div class="rss-widget">';
+		   wp_widget_rss_output(array( 'url' => 'http://www.plugins.joshlobe.com/feed/', 'title' => '', 'items' => $jwl_total_items, 'show_summary' => 0, 'show_author' => 0, 'show_date' => 0 ));
+		echo "</div>";
+		echo '<p style="text-align:center;border-top: #000 1px solid;padding:5px;"><a href="http://www.plugins.joshlobe.com/">Ultimate Tinymce</a> - Visual Wordpress Editor</p>';
+	}
+	
+	function jwl_configure_widget(){
+		$jwl_widget_id = 'jwl_tinymce_dashboard_widget'; // This must be the same ID we set in wp_add_dashboard_widget
+		$jwl_form_id = 'jwl-dashboard-control'; // Set this to whatever you want
+			
+		// Checks whether there are already dashboard widget options in the database
+		if ( !$jwl_widget_options = get_option( 'jwl_dashboard_options' ) )
+			$jwl_widget_options = array(); // If not, we create a new array
+		// Check whether we have information for this form
+		if ( !isset($jwl_widget_options[$jwl_widget_id]) )
+			$jwl_widget_options[$jwl_widget_id] = array(); // If not, we create a new array
+		// Check whether our form was just submitted
+		if ( 'POST' == $_SERVER['REQUEST_METHOD'] && isset($_POST[$jwl_form_id]) ) {
+			/* Get the value. In this case ['items'] is from the input field with the name of '.$form_id.'[items] */
+			$jwl_number = absint( $_POST[$jwl_form_id]['items'] );
+			$jwl_widget_options[$jwl_widget_id]['items'] = $jwl_number; // Set the number of items
+			update_option( 'jwl_dashboard_options', $jwl_widget_options ); // Update our dashboard widget options so we can access later
+		}
+		
+		/* Check if we have set the number of posts previously. If we didn't, then we just set it as empty. This value is used when we create the input field */
+		$jwl_number = isset( $jwl_widget_options[$jwl_widget_id]['items'] ) ? (int) $jwl_widget_options[$jwl_widget_id]['items'] : '';
+		
+		// Create our form fields. Pay very close attention to the name part of the input field.
+		echo '<p><label for="jwl_tinymce_dashboard_widget-number">' . __('Number of posts to show:') . '</label>';
+		echo '<input id="jwl_tinymce_dashboard_widget-number" name="'.$jwl_form_id.'[items]" type="text" value="' . $jwl_number . '" size="3" /></p>';
+	}
+}
+
+// Set an admin bar link to the settings page
+$options_admin_links = get_option('jwl_options_group4');
+$jwl_admin_links = isset($options_admin_links['jwl_admin_bar_link']);
+if ($jwl_admin_links == '1') {
+	function jwl_admin_bar_init() {
+		// Is the user sufficiently leveled, or has the bar been disabled?
+		if (!is_super_admin() || !is_admin_bar_showing() )
+			return;
+		// Good to go, lets do this!
+		add_action('admin_bar_menu', 'jwl_admin_bar_links', 500);
+	}
+	add_action('admin_bar_init', 'jwl_admin_bar_init');
+
+	function jwl_admin_bar_links() {
+		global $wp_admin_bar;
+		$path = get_option('siteurl');
+		// Links to add, in the form: 'Label' => 'URL'
+		$links = array( 'Settings Page' => '' );
+		$wp_admin_bar->add_menu( array( 'id' => 'utmce', 'title' => 'Ultimate Tinymce', 'href' => false, 'id' => 'jwl_links', 'href' => $path . '/wp-admin/admin.php?page=ultimate-tinymce' ));
+		/** * Add the submenu links. */
+		foreach ($links as $label => $url) { $wp_admin_bar->add_menu( array( 'id' => 'utmce2', 'title' => $label, 'href' => $path . '/wp-admin/admin.php?page=ultimate-tinymce', 'parent' => 'jwl_links' )); }
+	}
+}
+
+// Function for removing force reload of tinymce editor
+function jwl_tiny_mce_version($version) { // trick tinymce version number to force update and clear cache
+	return ++$version;
+}
+add_filter('tiny_mce_version', 'jwl_tiny_mce_version');
+$options_refresh = get_option('jwl_options_group4');
+$jwl_tinymce_refresh = isset($options_refresh['jwl_tinymce_refresh']);
+if ($jwl_tinymce_refresh == "1"){
+	remove_filter('tiny_mce_version', 'jwl_tiny_mce_version');
+}
+
+// Functions for QR Code
+$options_qr = get_option('jwl_options_group4');
+$jwl_qr_code = isset($options_qr['jwl_qr_code']);
+if ($jwl_qr_code == "1") {
+
+	function jwl_qr_code( $content ) {
+		if( is_single() ) {
+			
+			$options2 = get_option('jwl_options_group4');
+	
+			$content .= '<div class="jwl_qr_code" style="border:1px solid #ddd;margin-top:30px;"><div style="height:18px;border:1px solid #ddd;padding:5px;background:#'.$options2['jwl_qr_code_bg'].';color:#'.$options2['jwl_qr_code_text'].';" id="qr_header">';
+			$content .= '<span style="font-weight:bold;font-size:18px;margin-left:10px;">QR Code - Take this post Mobile!</span>';
+			$content .= '</div><div id="qr_main" style="padding:10px;background:#'.$options2['jwl_qr_code_bg_main'].';color:#'.$options2['jwl_qr_code_text'].';">';
+			$content .= '<div style="float:left;margin-right:20px;width:20%;"><script type="text/javascript">var uri=window.location.href;document.write("<img src=\'http://api.qrserver.com/v1/create-qr-code/?data="+encodeURI(uri)+"&size=75x75\'/>");</script></div>';
+			$content .= '<div style="float:left;width:75%;">'.$options2['jwl_qr_code_content'].'</div>';
+			$content .= '<div style="clear:both;"></div>';
+			$content .= '</div></div>';
+			
+			return wpautop($content);
+		}
+		else {
+			return $content;
+		}
+	}
+	add_filter('the_content', 'jwl_qr_code');
+}
+
+$options2_qr = get_option('jwl_options_group4');
+$jwl_qr_code_pages = isset($options2_qr['jwl_qr_code_pages']); 
+if ($jwl_qr_code_pages == "1") {
+
+	function jwl_qr_code_pages( $content ) {
+		if( is_page() ) {
+			
+			$options3 = get_option('jwl_options_group4');
+	
+			$content .= '<div class="jwl_qr_code" style="border:1px solid #ddd;margin-top:30px;"><div style="height:18px;border:1px solid #ddd;padding:5px;background:#'.$options3['jwl_qr_code_bg'].';color:#'.$options3['jwl_qr_code_text'].';" id="qr_header">';
+			$content .= '<span style="font-weight:bold;font-size:18px;margin-left:10px;">QR Code - Take this post Mobile!</span>';
+			$content .= '</div><div id="qr_main" style="padding:10px;background:#'.$options3['jwl_qr_code_bg_main'].';color:#'.$options3['jwl_qr_code_text'].';">';
+			$content .= '<div style="float:left;margin-right:20px;width:20%;"><script type="text/javascript">var uri=window.location.href;document.write("<img src=\'http://api.qrserver.com/v1/create-qr-code/?data="+encodeURI(uri)+"&size=75x75\'/>");</script></div>';
+			$content .= '<div style="float:left;width:75%;">'.$options3['jwl_qr_code_content'].'</div>';
+			$content .= '<div style="clear:both;"></div>';
+			$content .= '</div></div>';
+			
+			return wpautop($content);
+		}
+		else {
+			return $content;
+		}
+	}
+	add_filter('the_content', 'jwl_qr_code_pages');
+}
+
+// Functions for Tinymce Overrides Section
 // Functions for tinymce overrides
 $option_tmce_overrides = get_option('jwl_options_group8');
 if (isset($option_tmce_overrides['jwl_tinymce_modifications'])) {
@@ -1223,29 +1308,5 @@ if (isset($option_tmce_overrides['jwl_tinymce_modifications'])) {
 	}
 	add_filter('tiny_mce_before_init', 'jwl_modify_tmce');
 }
-
-// Function to make directory for Image Manager files
-/*
-function jwl_create_imgmgr_direct() {
-	
-	$current_user = get_current_user_id();
-	
-	$target1 = WP_CONTENT_DIR.'/uploads/ultimate-tinymce';
-	$target2 = WP_CONTENT_DIR.'/uploads/ultimate-tinymce/imgmgr';
-	$target3 = WP_CONTENT_DIR.'/uploads/ultimate-tinymce/imgmgr/'.$current_user.'/images';
-	$target4 = WP_CONTENT_DIR.'/uploads/ultimate-tinymce/imgmgr/'.$current_user.'/files';
-	
-	
-	$target5 = WP_CONTENT_DIR.'/uploads/ultimate-tinymce/advimg';
-	
-	wp_mkdir_p( $target1 );
-	wp_mkdir_p( $target2 );
-	wp_mkdir_p( $target3 );
-	wp_mkdir_p( $target4 );
-	
-	wp_mkdir_p( $target5 );
-}
-add_action('plugins_loaded','jwl_create_imgmgr_direct');
-*/
 
 ?>

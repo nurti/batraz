@@ -17,6 +17,8 @@ if (!class_exists('Btz_Shortcodes')) {
         protected $sections = array();
 
         function __construct() {
+            
+            require_once 'repository/class-btz-content-repository.php';
 
             add_action('init', array(&$this, 'btz_shortcodes_init'));
 
@@ -66,11 +68,11 @@ if (!class_exists('Btz_Shortcodes')) {
                 $request = $_POST['tiny_request'];
                 switch ($request) {
                     case 'taxonomies':
-                        echo json_encode($this->get_taxonomies_with_ids());
+                        echo json_encode(Btz_Content_Repository::get_taxonomies_with_ids());
                         break;
                     case 'post_list':
                         if (isset($_POST['pageNum'])) {
-                            echo json_encode($this->get_post_titles_ids($_POST['pageNum']));
+                            echo json_encode(Btz_Content_Repository::get_post_titles_ids_paged($_POST['pageNum']));
                         }
                         break;
                 }

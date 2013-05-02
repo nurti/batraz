@@ -212,12 +212,7 @@ class BTZ_Otp_Options {
               }
               $tabs .= '</div>';
             }
-                
-           
-//            
-//            var_dump($list);
-//            var_dump($tabs);
-//            
+
         }
         
         return $list . $tabs;

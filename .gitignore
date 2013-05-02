@@ -1,0 +1,7 @@
+.htaccess
+*.log
+*.sql
+wp-config.php
+wp-content/uploads/
+web.config
+keys-flickr.txt

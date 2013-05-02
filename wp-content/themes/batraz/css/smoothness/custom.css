@@ -1,0 +1,35 @@
+/*----------------------------------------------------------------------------*/
+/*                    OVERRIDES                                               */
+/*-----------------------------------------------------------------------------*/
+.site-header{
+    background: #ccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) left top repeat-x; 
+}
+
+body.custom-background, body{
+    background-color: #858585 !important; 
+
+    background-image: linear-gradient(top, #858585 31%, #B7C2BA 84%);
+    background-image: -o-linear-gradient(top, #858585 31%, #B7C2BA 84%);
+    background-image: -moz-linear-gradient(top, #858585 31%, #B7C2BA 84%);
+    background-image: -webkit-linear-gradient(top, #858585 31%, #B7C2BA 84%);
+    background-image: -ms-linear-gradient(top, #858585 31%, #B7C2BA 84%);
+
+    background-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            color-stop(0.31, #858585),
+            color-stop(0.84, #B7C2BA)
+    );
+}
+
+body .site{
+    box-shadow: 4px 3px 13px 7px #6B6B6B;
+-webkit-box-shadow: 4px 3px 13px 7px #6B6B6B;
+-moz-box-shadow: 4px 3px 13px 7px #6B6B6B;
+-o-box-shadow: 4px 3px 13px 7px #6B6B6B;
+}
+
+.site-content article{
+    border-color: #303030;
+}

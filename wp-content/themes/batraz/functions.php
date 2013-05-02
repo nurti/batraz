@@ -6,13 +6,14 @@
  * 
  * vengono eseguite prima delle functions di Twenty Twelve
  */
-require_once(STYLESHEETPATH . '/library/constants.php');
-require_once(STYLESHEETPATH . '/library/class-options-helper.php');
-require_once(STYLESHEETPATH . '/library/class-leaders-helper.php');
+require_once(STYLESHEETPATH . '/classes/constants.php');
+require_once(STYLESHEETPATH . '/classes/class-options-helper.php');
+require_once(STYLESHEETPATH . '/classes/class-leaders-helper.php');
 
-include(STYLESHEETPATH . '/functions-overrides.php');
-include(STYLESHEETPATH . '/functions-leaders.php');
-include(STYLESHEETPATH . '/scripts.php');
+include(STYLESHEETPATH . '/functions/functions-plugged.php');
+include(STYLESHEETPATH . '/functions/functions-otp.php');
+include(STYLESHEETPATH . '/functions/functions-cross.php');
+include(STYLESHEETPATH . '/scripts/scripts.php');
 
 
 
@@ -72,8 +73,14 @@ function adding_elements_options_func($optObj) {
             'usemedia' => '/js/media.js', 'class' => 'url-text'),
         array('name' => OPTION_COPYRIGHT, 'type' => 'text', 'label' => 'Copyright', 'class' => 'long-text'),
         array('name' => OPTION_ANNOTATION, 'type' => 'text', 'label' => 'Annotazione', 'class' => 'long-text'),
+       
         array('name' => OPTION_COLOR_STYLE, 'type' => 'select', 'values' => $styles,
             'label' => 'Color-Style Tema', 'class' => 'select-color-style'),
+        array('name' => OPTION_LEADERS_PPP, 'type' => 'text', 'label' => 'Numero leaders OTP', 'tab' => 'Singolo Post'),
+        array('name' => OPTION_LEADERS_SPEED, 'type' => 'text', 'label' => 'Speed leaders OTP', 'tab' => 'Singolo Post'),
+        array('name' => OPTION_OTP_NAV_INFINITE, 'type' => 'checkbox', 'label' => 'Navigazione infinita OTP', 'tab' => 'Singolo Post'),
+        array('name' => OPTION_TAXONOMIES_HIDE, 'type' => 'checkbox', 'label' => 'Nascondi tassonomie sul post', 'tab' => 'Singolo Post'),
+       
     );
 
     $types = get_post_types(array('_builtin' => false, 'public' => true), 'names');
@@ -86,15 +93,24 @@ function adding_elements_options_func($optObj) {
             'label' => $label, 'class' => 'select-color-style');
     }
 
+ 
     return $elements;
+}
+
+// get batraz sub theme per personalizzare i templates header sidebar etc..
+function get_current_sub_theme(){
+    global $btz_sub_theme;
+    if(!isset($btz_sub_theme))$btz_sub_theme = NULL;
+    error_log(print_r($btz_sub_theme));
+    return $btz_sub_theme;
 }
 
 /*
  * batraz thumbnail left index
  */
 
-function get_batraz_item_thumbnail($class='') {
-    return BTZ_Options_Helper::get_thumbnail_indicator($class);
+function get_batraz_item_thumbnail($postId, $class='') {
+    return BTZ_Options_Helper::get_thumbnail_indicator($postId, $class);
 
 }
 

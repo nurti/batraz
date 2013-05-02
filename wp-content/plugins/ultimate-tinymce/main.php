@@ -1,14 +1,14 @@
 <?php
 /**
  * @package Ultimate TinyMCE
- * @version 4.4
+ * @version 4.5
  */
 /*
 Plugin Name: Ultimate TinyMCE
 Plugin URI: http://www.plugins.joshlobe.com/
 Description: Beef up your visual tinymce editor with a plethora of advanced options.
 Author: Josh Lobe
-Version: 4.4
+Version: 4.5
 Author URI: http://joshlobe.com
 
 */
@@ -114,70 +114,6 @@ if ($jwl_remove_donate == "1"){
 	remove_filter('plugin_row_meta', 'jwl_execphp_donate_link', 10, 2);
 }
 
-// Check WP Version and generate update notice if necessary
-if ( ! isset($GLOBALS['wp_version']) || version_compare($GLOBALS['wp_version'], '3.3.1', '<') ) { // if less than ...
-	?>
-	<div class="error" style="margin-top:30px;">
-	<p><?php _e('This plugin requires WordPress version 3.3.1 or newer. Please upgrade your WordPress installation or download an', 'jwl-ultimate-tinymce'); ?> <a href="http://wordpress.org/extend/plugins/ultimate-tinymce/developers/"><?php _e('older version of the plugin.', 'jwl-ultimate-tinymce'); ?></a></p>
-	</div>
-	<?php
-
-	return;
-}
-
-// Functions for QR Code
-$options = get_option('jwl_options_group4');
-$jwl_qr_code = isset($options['jwl_qr_code']);
-if ($jwl_qr_code == "1") {
-
-	function jwl_qr_code( $content ) {
-		if( is_single() ) {
-			
-			$options2 = get_option('jwl_options_group4');
-	
-			$content .= '<div class="jwl_qr_code" style="border:1px solid #ddd;margin-top:30px;"><div style="height:18px;border:1px solid #ddd;padding:5px;background:#'.$options2['jwl_qr_code_bg'].';color:#'.$options2['jwl_qr_code_text'].';" id="qr_header">';
-			$content .= '<span style="font-weight:bold;font-size:18px;margin-left:10px;">QR Code - Take this post Mobile!</span>';
-			$content .= '</div><div id="qr_main" style="padding:10px;background:#'.$options2['jwl_qr_code_bg_main'].';color:#'.$options2['jwl_qr_code_text'].';">';
-			$content .= '<div style="float:left;margin-right:20px;width:20%;"><script type="text/javascript">var uri=window.location.href;document.write("<img src=\'http://api.qrserver.com/v1/create-qr-code/?data="+encodeURI(uri)+"&size=75x75\'/>");</script></div>';
-			$content .= '<div style="float:left;width:75%;">'.$options2['jwl_qr_code_content'].'</div>';
-			$content .= '<div style="clear:both;"></div>';
-			$content .= '</div></div>';
-			
-			return wpautop($content);
-		}
-		else {
-			return $content;
-		}
-	}
-	add_filter('the_content', 'jwl_qr_code');
-}
-
-$options2 = get_option('jwl_options_group4');
-$jwl_qr_code_pages = isset($options2['jwl_qr_code_pages']); 
-if ($jwl_qr_code_pages == "1") {
-
-	function jwl_qr_code_pages( $content ) {
-		if( is_page() ) {
-			
-			$options3 = get_option('jwl_options_group4');
-	
-			$content .= '<div class="jwl_qr_code" style="border:1px solid #ddd;margin-top:30px;"><div style="height:18px;border:1px solid #ddd;padding:5px;background:#'.$options3['jwl_qr_code_bg'].';color:#'.$options3['jwl_qr_code_text'].';" id="qr_header">';
-			$content .= '<span style="font-weight:bold;font-size:18px;margin-left:10px;">QR Code - Take this post Mobile!</span>';
-			$content .= '</div><div id="qr_main" style="padding:10px;background:#'.$options3['jwl_qr_code_bg_main'].';color:#'.$options3['jwl_qr_code_text'].';">';
-			$content .= '<div style="float:left;margin-right:20px;width:20%;"><script type="text/javascript">var uri=window.location.href;document.write("<img src=\'http://api.qrserver.com/v1/create-qr-code/?data="+encodeURI(uri)+"&size=75x75\'/>");</script></div>';
-			$content .= '<div style="float:left;width:75%;">'.$options3['jwl_qr_code_content'].'</div>';
-			$content .= '<div style="clear:both;"></div>';
-			$content .= '</div></div>';
-			
-			return wpautop($content);
-		}
-		else {
-			return $content;
-		}
-	}
-	add_filter('the_content', 'jwl_qr_code_pages');
-}
-
 /*
  * Here we are generating the admin options page.
  * This will allow us to include all scripts and code to mimic the main dashboard admin page.
@@ -213,8 +149,394 @@ class jwl_metabox_admin {
 			add_action("load-{$this->pagehook}",array(&$this,'jwl_help_screen'));
 			add_action('admin_print_styles-'.$this->pagehook, array(&$this, 'jwl_admin_register_head_styles'));
 			add_action('admin_print_scripts-'.$this->pagehook, array(&$this, 'jwl_admin_register_head_scripts'));
-
+			$this->jwl_check_dismiss();
+			if (isset($this->actions['show_defaults_popup']) && $this->actions['show_defaults_popup']) {
+				add_action('admin_footer-'.$this->pagehook, array(&$this, 'jwl_donate_popup'));
+			}
 		}
+		
+		function jwl_check_dismiss() {
+			
+			$opts = get_option('jwl_utmce_load_defaults');
+
+            // User clicked don't show pop-up link, update option.
+			// Options for Beginner
+            if (isset($_GET['dontshowpopup']) && ($_GET['dontshowpopup'] == 1) && isset($_GET['defaults']) && ($_GET['defaults'] == 'beginner')) {
+				
+                $opts['dontshowpopup'] = 1;
+                update_option('jwl_utmce_load_defaults', $opts);
+				
+                delete_option('jwl_options_group1');
+				delete_option('jwl_options_group2');
+				delete_option('jwl_options_group3');
+				delete_option('jwl_options_group4');
+				
+				$options = get_option('jwl_options_group1');
+					$options['jwl_fontselect_field_id'] = '1';
+					$options['jwl_fontsizeselect_field_id'] = '1';
+					$options['jwl_backcolorpicker_field_id'] = '1';
+					$options['jwl_forecolorpicker_field_id'] = '1';
+					$options['jwl_fontselect_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_fontsizeselect_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_backcolorpicker_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_forecolorpicker_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+				update_option('jwl_options_group1', $options);
+				
+				$options2 = get_option('jwl_options_group2');
+					$options2['jwl_styleselect_field_id'] = '1';
+					$options2['jwl_tableDropdown_field_id'] = '1';
+					$options2['jwl_emotions_field_id'] = '1';
+					$options2['jwl_html5_field_id'] = '1';
+					$options2['jwl_media_field_id'] = '1';
+					$options2['jwl_youtubeIframe_field_id'] = '1';
+					$options2['jwl_shortcodes_field_id'] = '1';
+					$options2['jwl_styleselect_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_tableDropdown_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_emotions_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_html5_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_media_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_youtubeIframe_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_shortcodes_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+				update_option('jwl_options_group2', $options2);
+				
+				$options3 = get_option('jwl_options_group3');
+					$options3['jwl_tinycolor_css_field_id'] = unserialize('a:1:{s:9:"tinycolor";s:7:"Default";}');
+					$options3['jwl_signoff_field_id'] = 'This is a signoff example.';
+				update_option('jwl_options_group3', $options3);
+					
+				$options4 = get_option('jwl_options_group4');
+					$options4['jwl_dashboard_widget'] = '1';
+					$options4['jwl_admin_bar_link'] = '1';
+					if(isset($_GET['credit']) && $_GET['credit'] == 'true') {
+						$options4['jwl_dev_credit'] = '1';
+					}
+					if(isset($_GET['beautify']) && $_GET['beautify'] == 'false') {
+						$options4['jwl_disable_styles'] = '1';
+					}
+				update_option('jwl_options_group4', $options4);
+				
+            }
+			// Options for Intermediate
+			if (isset($_GET['dontshowpopup']) && ($_GET['dontshowpopup'] == 1) && isset($_GET['defaults']) && ($_GET['defaults'] == 'intermediate')) {
+				
+                $opts['dontshowpopup'] = 1;
+                update_option('jwl_utmce_load_defaults', $opts);
+				
+				delete_option('jwl_options_group1');
+				delete_option('jwl_options_group2');
+				delete_option('jwl_options_group3');
+				delete_option('jwl_options_group4');
+				
+				$options = get_option('jwl_options_group1');
+					$options['jwl_fontselect_field_id'] = '1';
+					$options['jwl_fontsizeselect_field_id'] = '1';
+					$options['jwl_backcolorpicker_field_id'] = '1';
+					$options['jwl_forecolorpicker_field_id'] = '1';
+					$options['jwl_advhr_field_id'] = '1';
+					$options['jwl_visualaid_field_id'] = '1';
+					$options['jwl_anchor_field_id'] = '1';
+					$options['jwl_search_field_id'] = '1';
+					$options['jwl_replace_field_id'] = '1';
+					$options['jwl_nonbreaking_field_id'] = '1';
+					$options['jwl_mailto_field_id'] = '1';
+					$options['jwl_equation_field_id'] = '1';
+					$options['jwl_encode_field_id'] = '1';
+					$options['jwl_directionality_field_id'] = '1';
+					$options['jwl_ezimage_field_id'] = '1';
+					$options['jwl_ptags_field_id'] = '1';
+					$options['jwl_mcelinebreak_field_id'] = '1';
+					
+					$options['jwl_fontselect_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_fontsizeselect_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_backcolorpicker_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_forecolorpicker_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_advhr_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_visualaid_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_anchor_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_search_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_replace_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_nonbreaking_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_mailto_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_equation_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_encode_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_directionality_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_ezimage_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_ptags_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_mcelinebreak_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					
+					
+				update_option('jwl_options_group1', $options);
+					
+				$options2 = get_option('jwl_options_group2');
+					$options2['jwl_styleselect_field_id'] = '1';
+					$options2['jwl_tableDropdown_field_id'] = '1';
+					$options2['jwl_emotions_field_id'] = '1';
+					$options2['jwl_image_field_id'] = '1';
+					$options2['jwl_preview_field_id'] = '1';
+					$options2['jwl_cite_field_id'] = '1';
+					$options2['jwl_attribs_field_id'] = '1';
+					$options2['jwl_styleprops_field_id'] = '1';
+					$options2['jwl_codemagic_field_id'] = '1';
+					$options2['jwl_html5_field_id'] = '1';
+					$options2['jwl_media_field_id'] = '1';
+					$options2['jwl_youtubeIframe_field_id'] = '1';
+					$options2['jwl_imgmap_field_id'] = '1';
+					$options2['jwl_visualchars_field_id'] = '1';
+					$options2['jwl_print_field_id'] = '1';
+					$options2['jwl_shortcodes_field_id'] = '1';
+					$options2['jwl_loremipsum_field_id'] = '1';
+					$options2['jwl_w3cvalidate_field_id'] = '1';
+					
+					$options2['jwl_styleselect_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_tableDropdown_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_emotions_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_image_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_preview_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_cite_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_attribs_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_styleprops_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_codemagic_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_html5_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_media_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_youtubeIframe_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_imgmap_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_visualchars_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_print_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_shortcodes_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_loremipsum_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_w3cvalidate_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+				update_option('jwl_options_group2', $options2);
+					
+				$options3 = get_option('jwl_options_group3');
+					$options3['jwl_tinycolor_css_field_id'] = unserialize('a:1:{s:9:"tinycolor";s:7:"Default";}');
+					$options3['jwl_signoff_field_id'] = 'This is a signoff example.';
+				update_option('jwl_options_group3', $options3);
+					
+				$options4 = get_option('jwl_options_group4');
+					$options4['jwl_dashboard_widget'] = '1';
+					$options4['jwl_admin_bar_link'] = '1';
+					if(isset($_GET['credit']) && $_GET['credit'] == 'true') {
+						$options4['jwl_dev_credit'] = '1';
+					}
+					if(isset($_GET['beautify']) && $_GET['beautify'] == 'false') {
+						$options4['jwl_disable_styles'] = '1';
+					}
+				update_option('jwl_options_group4', $options4);
+            }
+			// Options for Advamced
+			if (isset($_GET['dontshowpopup']) && ($_GET['dontshowpopup'] == 1) && isset($_GET['defaults']) && ($_GET['defaults'] == 'advanced')) {
+				
+                $opts['dontshowpopup'] = 1;
+                update_option('jwl_utmce_load_defaults', $opts);
+				
+				delete_option('jwl_options_group1');
+				delete_option('jwl_options_group2');
+				delete_option('jwl_options_group3');
+				delete_option('jwl_options_group4');
+				
+				$options = get_option('jwl_options_group1');
+					$options['jwl_fontselect_field_id'] = '1';
+					$options['jwl_fontsizeselect_field_id'] = '1';
+					$options['jwl_cut_field_id'] = '1';
+					$options['jwl_copy_field_id'] = '1';
+					$options['jwl_paste_field_id'] = '1';
+					$options['jwl_backcolorpicker_field_id'] = '1';
+					$options['jwl_forecolorpicker_field_id'] = '1';
+					$options['jwl_advhr_field_id'] = '1';
+					$options['jwl_visualaid_field_id'] = '1';
+					$options['jwl_anchor_field_id'] = '1';
+					$options['jwl_sub_field_id'] = '1';
+					$options['jwl_sup_field_id'] = '1';
+					$options['jwl_search_field_id'] = '1';
+					$options['jwl_replace_field_id'] = '1';
+					$options['jwl_datetime_field_id'] = '1';
+					$options['jwl_nonbreaking_field_id'] = '1';
+					$options['jwl_mailto_field_id'] = '1';
+					$options['jwl_layers_field_id'] = '1';
+					$options['jwl_span_field_id'] = '1';
+					$options['jwl_equation_field_id'] = '1';
+					$options['jwl_encode_field_id'] = '1';
+					$options['jwl_directionality_field_id'] = '1';
+					$options['jwl_ezimage_field_id'] = '1';
+					$options['jwl_ptags_field_id'] = '1';
+					$options['jwl_mcelinebreak_field_id'] = '1';
+					
+					$options['jwl_fontselect_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_fontsizeselect_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_cut_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_copy_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_paste_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_backcolorpicker_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_forecolorpicker_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_advhr_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_visualaid_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_anchor_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_sub_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_sup_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_search_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_replace_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_datetime_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_nonbreaking_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_mailto_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_layers_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_span_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_equation_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_encode_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_directionality_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_ezimage_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_ptags_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					$options['jwl_mcelinebreak_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 3";}');
+					
+					
+				update_option('jwl_options_group1', $options);
+					
+				$options2 = get_option('jwl_options_group2');
+					$options2['jwl_styleselect_field_id'] = '1';
+					$options2['jwl_tableDropdown_field_id'] = '1';
+					$options2['jwl_emotions_field_id'] = '1';
+					$options2['jwl_image_field_id'] = '1';
+					$options2['jwl_preview_field_id'] = '1';
+					$options2['jwl_cite_field_id'] = '1';
+					$options2['jwl_abbr_field_id'] = '1';
+					$options2['jwl_acronym_field_id'] = '1';
+					$options2['jwl_del_field_id'] = '1';
+					$options2['jwl_ins_field_id'] = '1';
+					$options2['jwl_attribs_field_id'] = '1';
+					$options2['jwl_styleprops_field_id'] = '1';
+					$options2['jwl_code_field_id'] = '1';
+					$options2['jwl_codemagic_field_id'] = '1';
+					$options2['jwl_html5_field_id'] = '1';
+					$options2['jwl_media_field_id'] = '1';
+					$options2['jwl_youtube_field_id'] = '1';
+					$options2['jwl_youtubeIframe_field_id'] = '1';
+					$options2['jwl_imgmap_field_id'] = '1';
+					$options2['jwl_visualchars_field_id'] = '1';
+					$options2['jwl_print_field_id'] = '1';
+					$options2['jwl_shortcodes_field_id'] = '1';
+					$options2['jwl_loremipsum_field_id'] = '1';
+					$options2['jwl_w3cvalidate_field_id'] = '1';
+					$options2['jwl_clker_field_id'] = '1';
+					$options2['jwl_acheck_field_id'] = '1';
+					$options2['jwl_advlink_field_id'] = '1';
+					$options2['jwl_div_field_id'] = '1';
+					$options2['jwl_nextpage_field_id'] = '1';
+					
+					$options2['jwl_styleselect_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_tableDropdown_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_emotions_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_image_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_preview_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_cite_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_abbr_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_acronym_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_del_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_ins_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_attribs_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_styleprops_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_code_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_codemagic_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_html5_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_media_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_youtube_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_youtubeIframe_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_imgmap_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_visualchars_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_print_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_shortcodes_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_loremipsum_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_w3cvalidate_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_clker_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_acheck_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_advlink_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_div_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+					$options2['jwl_nextpage_dropdown'] = unserialize('a:1:{s:3:"row";s:5:"Row 4";}');
+				update_option('jwl_options_group2', $options2);
+					
+				$options3 = get_option('jwl_options_group3');
+					$options3['jwl_tinycolor_css_field_id'] = unserialize('a:1:{s:9:"tinycolor";s:7:"Default";}');
+					$options3['jwl_signoff_field_id'] = 'This is a signoff example.';
+					$options3['jwl_shortcode_field_id'] = '1';
+					$options3['jwl_php_widget_field_id'] = '1';
+					$options3['jwl_columns_field_id'] = '1';
+				update_option('jwl_options_group3', $options3);
+					
+				$options4 = get_option('jwl_options_group4');
+					$options4['jwl_dashboard_widget'] = '1';
+					$options4['jwl_admin_bar_link'] = '1';
+					$options4['jwl_tinymce_excerpt'] = '1';
+					if(isset($_GET['credit']) && $_GET['credit'] == 'true') {
+						$options4['jwl_dev_credit'] = '1';
+					}
+					if(isset($_GET['beautify']) && $_GET['beautify'] == 'false') {
+						$options4['jwl_disable_styles'] = '1';
+					}
+				update_option('jwl_options_group4', $options4);
+            }
+			// Options for No Thanks
+			if (isset($_GET['dontshowpopup']) && ($_GET['dontshowpopup'] == 1) && isset($_GET['defaults']) && ($_GET['defaults'] == 'nothanks')) {
+                $opts['dontshowpopup'] = 1;
+                update_option('jwl_utmce_load_defaults', $opts);
+				
+				$options4 = get_option('jwl_options_group4');
+					if(isset($_GET['credit']) && $_GET['credit'] == 'true') {
+						$options4['jwl_dev_credit'] = '1';
+					}
+					if(isset($_GET['beautify']) && $_GET['beautify'] == 'false') {
+						$options4['jwl_disable_styles'] = '1';
+					}
+				update_option('jwl_options_group4', $options4);
+            }
+			// Options if no choice was selected
+			if (isset($_GET['dontshowpopup']) && ($_GET['dontshowpopup'] == 1) && isset($_GET['defaults']) && ($_GET['defaults'] == 'none')) {
+				$opts['dontshowpopup'] = 1;
+                update_option('jwl_utmce_load_defaults', $opts);
+				
+				$options4 = get_option('jwl_options_group4');
+					if(isset($_GET['credit']) && $_GET['credit'] == 'true') {
+						$options4['jwl_dev_credit'] = '1';
+					}
+					if(isset($_GET['beautify']) && $_GET['beautify'] == 'false') {
+						$options4['jwl_disable_styles'] = '1';
+					}
+				update_option('jwl_options_group4', $options4);
+			}
+			
+            // User hasn't dismissed.  Show it.
+            if (!isset($opts['dontshowpopup'])) {
+                $this->actions['show_defaults_popup'] = true;
+                wp_enqueue_style('jwl_dev_credit', plugins_url('css/dev_credit.css', __FILE__), array(), '1.0.0', 'all');
+                wp_enqueue_script('jwl_dev_credit', plugins_url('js/dev_credit.js', __FILE__));
+            }
+        }
+		
+		function jwl_donate_popup() {
+            ?>
+            <div id="jwl-dev-credit-box">
+                <div id="jwl-dev-credit-box-content">
+                    <img width="16" height="16" class="jwl-close" src="<?php echo plugin_dir_url( __FILE__ ) ?>img/close.png" alt="X">
+                    <h2><?php _e('Ultimate Tinymce Quick Settings Tool:','jwl-ultimate-tinymce') ?></h2>
+                    <div style="padding:10px;margin-top:-10px;">
+                    <h3><?php _e("Use these options to quickly configure settings for Ultimate Tinymce.",'jwl-ultimate-tinymce') ?></h3>
+                    <form method="get">
+                        <p><input type="radio" name="defaults_load" value="beginner" style="margin-right:10px;" /><?php _e("Load 'beginner' configuration.",'jwl-ultimate-tinymce') ?></p>
+                        <p><input type="radio" name="defaults_load" value="intermediate" style="margin-right:10px;" /><?php _e("Load 'intermediate' configuration.",'jwl-ultimate-tinymce') ?></p>
+                        <p><input type="radio" name="defaults_load" value="advanced" style="margin-right:10px;" /><?php _e("Load 'advanced' configuration.",'jwl-ultimate-tinymce') ?></p>
+                        <p><input type="radio" name="defaults_load" value="nothanks" style="margin-right:10px;" /><?php _e("No Thanks. My current settings are fine.",'jwl-ultimate-tinymce') ?></p>
+                        <br />
+                        <p><input class="button-primary" type="button" value="<?php _e('Submit Selection','jwl-ultimate-tinymce'); ?>" name="defaults_confirm" onclick="jwlDefaults()" /></p>
+                    
+                   		<br /><br />
+                    
+                   		<p><input type="checkbox" id="beautify" name="beautify" style="margin-right:10px;" checked="checked" /><?php _e("Beautify Plugin (Unchecking disables the option - enabled by default)",'jwl-ultimate-tinymce') ?></p>
+                   		<p><input type="checkbox" id="credit" name="credit" style="margin-right:10px;" checked="checked" /><?php _e("Support the Developer (Leaving checked enables the option - disabled by default)",'jwl-ultimate-tinymce') ?></p>
+                    </form>
+                    
+                    <a class="jwl-dontshow" onclick="jwlDefaults()"><?php _e('(do not show me this pop-up again)','jwl-ultimate-tinymce') ?></a>
+                    </div>
+                </div>
+            </div>
+            <?php
+        }
 		
 		// Register (and Enqueue) our styles only for admin settings page
 		function jwl_admin_register_head_styles() {
@@ -271,7 +593,6 @@ class jwl_metabox_admin {
 			
 			add_meta_box('jwl_metabox1', __('Buttons Group 1','jwl-ultimate-tinymce'), array(&$this, 'jwl_buttons_group_1'), $this->pagehook, 'normal', 'core');
 			add_meta_box('jwl_metabox2', __('Buttons Group 2','jwl-ultimate-tinymce'), array(&$this, 'jwl_buttons_group_2'), $this->pagehook, 'normal', 'core');
-			add_meta_box('jwl_metabox9', __('Other Plugins\' Buttons','jwl-ultimate-tinymce'), array(&$this, 'jwl_buttons_group_9'), $this->pagehook, 'normal', 'core');
 			add_meta_box('jwl_metabox4', __('Miscellaneous Features','jwl-ultimate-tinymce'), array(&$this, 'jwl_buttons_group_3'), $this->pagehook, 'normal', 'core');
 			add_meta_box('jwl_metabox5', __('Admin Options','jwl-ultimate-tinymce'), array(&$this, 'jwl_buttons_group_4'), $this->pagehook, 'normal', 'core');
 			add_meta_box('jwl_metabox8', __('Content Editor (Tinymce) Over-rides','jwl-ultimate-tinymce'), array(&$this, 'jwl_buttons_group_8'), $this->pagehook, 'normal', 'core');
@@ -886,24 +1207,6 @@ jQuery(document).ready(
             </form>
 			<?php
 		}
-		function jwl_buttons_group_9($data) { // Other Plugins Buttons
-			sort($data);
-			?><a name="buttonsother"> </a><form action="options.php" method="post" name="jwl_main_options9"><?php
-			do_settings_sections('jwl_options_group9');
-			settings_fields('jwl_options_group9'); ?>
-            <div class="bottom_options_content" style="margin-top:30px;padding:10px;background-color:#E6EFEF;border:1px solid #000;border-radius:5px;width:300px;float:left;">
-            <span style="padding-left:5px;"><strong><?php _e('Other Plugins Buttons Master Controls:','jwl-ultimate-tinymce'); ?></strong></span><br />
-            <select id="masterBox3" name="masterBox3" style="width:80px;">
-            <option value="Row 1">Row 1</option><option value="Row 2">Row 2</option>
-            <option value="Row 3">Row 3</option><option value="Row 4">Row 4</option>
-            </select>
-            </span>
-			<span style="padding-left:10px;margin-top:20px;"><input type="button" id="allsts3" value="Check All"><input type="button" id="nosts3" value="UnCheck All">
-            </div><div style="float:left;margin-top:70px;">
-            <span style="margin-left:60px;"><input class="button-primary" type="submit" name="Save" style="padding-left:40px;padding-right:40px;" value="<?php _e('Update Other Plugins Buttons Options','jwl-ultimate-tinymce'); ?>" id="submitbutton" /></span></span></div><div style="clear:both;"></div>
-            </form>
-			<?php
-		}
 		function jwl_buttons_group_3($data) { // Miscellaneous Options and Features
 			sort($data);
 			?><a name="misc"> </a><form action="options.php" method="post" name="jwl_main_options3"><?php
@@ -989,28 +1292,5 @@ function jwl_update_message_cb( /* $plugin_data, $r */ )
 	
     return print $output;
 }
-
-
-
-// Make Directories for TinyBrowser
-function jwl_create_tinybrowser_directories() {
-	
-	$current_user = get_current_user_id();
-	
-	//$target1 = WP_CONTENT_DIR.'/uploads/ultimate-tinymce/imgmgr/'.$current_user.'/uploaded';
-	$target2 = WP_CONTENT_DIR.'/uploads/ultimate-tinymce/imgmgr/'.$current_user.'/images';
-	$target3 = WP_CONTENT_DIR.'/uploads/ultimate-tinymce/imgmgr/'.$current_user.'/files';
-	
-	//if(!is_dir($target1)){
-		//wp_mkdir_p( $target1 );
-	//}
-	if(!is_dir($target2)){
-		wp_mkdir_p( $target2 );
-	}
-	if(!is_dir($target3)){
-		wp_mkdir_p( $target3 );
-	}
-}
-add_action('plugins_loaded','jwl_create_tinybrowser_directories');
 
 ?>

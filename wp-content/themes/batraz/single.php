@@ -15,19 +15,10 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
                                 
 				<?php get_template_part( 'content', get_post_format() ); ?>
+                    
+                                <?php get_template_part( 'nav', 'single-batraz'); ?>
                                 
-                                <?php if(!apply_filters('btz_otp_nav', 'nav', 'nav-single')) : ?>
-                                    <nav class="nav-single">
-                                            <h3 class="assistive-text"><?php _e( 'Post navigation', 'twentytwelve' ); ?></h3>
-                                            <span titl="Post Precedente" class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'twentytwelve' ) . '</span> %title' , true); ?></span>
-                                            <span title="Post Successivo" class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'twentytwelve' ) . '</span>', true ); ?></span>
-
-                                    </nav><!-- .nav-single -->
-                                <?php endif; ?>
-                                
-                                
-                                
-                                
+                                <?php get_template_part( 'content', 'cross' ); ?>
                                 
                                 
 				<?php comments_template( '', true ); ?>
