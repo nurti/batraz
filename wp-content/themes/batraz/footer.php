@@ -12,9 +12,11 @@
 ?>
 	</div><!-- #main .wrapper -->
 	<footer id="colophon" role="contentinfo">
-            <div class="batraz-info">
-                <?php get_sidebar( 'footer' ); ?>
-            </div>
+            
+                <?php if(BTZ_Options_Helper::search_on_footer()) : ?>
+                    <?php get_sidebar( 'footer' ); ?>
+                 <?php endif; ?>
+            
 		<div class="site-info">
                     <p class="copyright">
 			<?php do_action( 'twentytwelve_credits' ); ?>

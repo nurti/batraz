@@ -28,74 +28,31 @@ header.site-header hgroup{
 }
 
 
-
-
-
-header.item-right h1{
-    margin:0 0 0 135px;
-    margin:0 0 0 9.642857143rem;
-    clear: none;
-/*    border:1px solid black;*/
-}
-div.item-right{
-/*    border:1px solid black;*/
-    margin:0 0 0 135px;
-    margin:0 0 0 9.642857143;
+/*---------------------------------------------------------------------------
+        ARTICLE ITEM LIST (see ITEM_CONTENT TEMPLATE )
+-----------------------------------------------------------------------------*/
+article.item-right{
+     min-height: 100px;
+     min-height: 7.1428571rem;
+     margin-bottom: 28px;
+     margin-bottom: 2rem;
 }
 
-img.floatleft , div.floatleft {
-    border: 0 none;
-    float: left;
+article.item-right a{
+     display: inline-block;
 }
 
-.site-content article {
-    min-height: 100px;
-    min-height: 7.142857rem;
+article.item-right > div{
+     display: inline-block;
+     max-width: 70%;    
+     vertical-align: top;
+     margin-left: 14px;
+     margin-left: 1rem;
 }
 
-/*
-* elemento footer
-*/
-footer[role="contentinfo"]{
-/*    position: fixed;
-    bottom:0;
-    width: 1040px;
-    width: 74.285714285rem;*/
-    
-    
-    margin: 0 auto;
-    max-width: 1040px;
-    max-width: 74.285714285rem;
-    padding-bottom: 0;
-}
 
-footer div.batraz-info{
-    min-height: 56px;
-    min-height: 4rem;
-    padding:14px;
-    padding:1rem;
-}
 
-footer div.site-info{
-    min-height: 28px;
-    min-height: 2.0rem;
-    padding:7px;
-    padding:.5rem
 
-}
-
-footer div.site-info p.copyright{
-    float:left;
-}
-
-footer div.site-info p.annotation{
-    float:right;
-}
-
-/* articoli */
-.site-content article{
-   /* padding: 14px; */
-}
 
 /* elementi widgets */
 .widget-title{
@@ -132,13 +89,64 @@ footer div.site-info p.annotation{
     
 }
 
-/* widgets in footer */
-.template-front-page.two-sidebars .batraz-info .widget_search,
-.batraz-info .widget_search{
+
+/*---------------------------------------------------------------------------
+        FOOTER
+-----------------------------------------------------------------------------*/
+footer[role="contentinfo"]{
+    margin: 0 auto;
+    max-width: 1040px;
+    max-width: 74.285714285rem;
+    padding-bottom: 0;
+}
+
+
+
+footer div.site-info{
+    min-height: 28px;
+    min-height: 2.0rem;
+    padding:7px;
+    padding:.5rem;
+    clear: both;
+}
+
+footer div.site-info p.copyright{
+    float:left;
+}
+
+footer div.site-info p.annotation{
     float:right;
 }
 
-.batraz-info .widget_search input[type=text]{
+/*---------------------------------------------------------------------------
+        SEARCH FOOTER O HEADER
+-----------------------------------------------------------------------------*/
+footer .widget_search{
+    min-height: 56px;
+    min-height: 4rem;
+    padding:14px;
+    padding:1rem;
+}
+
+.site-header{
+    position: relative;
+}
+
+.site-header .widget_search{
+    position: absolute;
+    right:14px;
+    right:1rem;
+    top:98px;
+    top:7rem;
+}
+
+footer .widget_search{
+    float:right !important;
+}
+
+
+
+.widget_search input[type=text]{
     border: 0 none;
     margin: 0;
     padding: 5px 10px;
@@ -146,10 +154,14 @@ footer div.site-info p.annotation{
     float: left;
 }
 
-.batraz-info .widget_search input[type=submit]{
+.widget_search input[type=submit]{
     border: 0 none;
 }
 
+
+/*---------------------------------------------------------------------------
+       ENTRY-META    ( TAXONOMIES ... )
+-----------------------------------------------------------------------------*/
 
 .entry-meta .taxonomies-article{
     margin-right: 14px;
@@ -392,6 +404,10 @@ nav.nav-single-otp .nav-single-otp-prev a img {
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
 	hyphens: auto;
+        min-height: 100px;
+        min-height: 7.1428571rem;
+        margin-bottom: 28px;
+        margin-bottom: 2rem;
 }
 
 .cross-post-list > div:first-child {
@@ -405,6 +421,22 @@ nav.nav-single-otp .nav-single-otp-prev a img {
 	-moz-hyphens: auto;
 	hyphens: auto;
 }
+
+
+
+
+.cross-post a{
+     display: inline-block;
+}
+
+.cross-post > div{
+     display: inline-block;
+     max-width: 70%;    
+     vertical-align: top;
+     margin-left: 14px;
+     margin-left: 1rem;
+}
+
 
 /*---------------------------------------------------------------------------
         TABLE IN ENTRY CONTENT

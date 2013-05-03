@@ -55,11 +55,15 @@ class WP_Widget_Random_Posts extends WP_Widget {
 		<?php if ( $title ) echo $before_title . $title . $after_title; ?>
 		<ul>
 		<?php while ( $r->have_posts() ) : $r->the_post(); ?>
-			<li>
-				<a href="<?php the_permalink() ?>" title="<?php echo esc_attr( get_the_title() ? get_the_title() : get_the_ID() ); ?>"><?php if ( get_the_title() ) the_title(); else the_ID(); ?></a>
-                                <?php if ( $show_thumbnail ) : ?>
-                                    <span class="post-thumbnail"><?php echo the_post_thumbnail(); ?></span>
-                                <?php endif; ?>
+			
+                             <?php if (( $show_thumbnail ) && ($thumb = get_the_post_thumbnail()))  : ?>
+                        <li style="list-style:none">
+                                 <a href="<?php the_permalink() ?>" title="<?php echo esc_attr( get_the_title() ? get_the_title() : get_the_ID() ); ?>"><span class="post-thumbnail" ><?php echo $thumb; ?></span></a>
+                        </li>
+                             <?php else : ?> 
+                        <li>
+                                 <a href="<?php the_permalink() ?>" title="<?php echo esc_attr( get_the_title() ? get_the_title() : get_the_ID() ); ?>"><?php if ( get_the_title() ) the_title(); else the_ID(); ?></a>
+                             <?php endif; ?>
 			</li>
 		<?php endwhile; ?>
 		</ul>

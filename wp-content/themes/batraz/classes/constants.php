@@ -16,6 +16,9 @@ define( 'OPTION_PRIMARY_HIDE' , 'btz_primary_hide');
 define( 'OPTION_TOPRIGHT_HH' ,'btz_topright_have_home');
 define( 'OPTION_PRIMARY_HH' , 'btz_primary_have_home');
 
+define( 'OPTION_SEARCH_ON_HEADER' ,'btz_search_on_header');
+define( 'OPTION_SEARCH_ON_FOOTER' ,'btz_search_on_footer');
+
 define( 'OPTION_LOGO_URL' , 'btz_logo_url');
 
 define( 'OPTION_COPYRIGHT' , 'btz_copyright');

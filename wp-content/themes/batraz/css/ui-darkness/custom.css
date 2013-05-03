@@ -205,19 +205,22 @@ a:active img[class*="wp-image-"] {
 .widget-title {
     color: #ccc ;
 }
-.template-front-page.two-sidebars .batraz-info .widget_search,
-.batraz-info .widget_search{
-    /*    background: transparent url('images/bg-search.png') top left no-repeat;*/
+
+
+/*---------------------------------------------------------------------------
+        SEARCH AREA ( HEADER O FOOTER )
+-----------------------------------------------------------------------------*/
+.widget_search input[type=text]{
+   background: transparent url('images/input-search.png') top left no-repeat;
+   color:#aaa;
+  
 }
 
-.batraz-info .widget_search input[type=text]{
-    background: transparent url('images/input-search.png') top left no-repeat;
-    color:#aaa;
-}
-
-.batraz-info .widget_search input[type=submit]{
-    background: transparent url('images/button-search.png') top left no-repeat;
+.widget_search input[type=submit]{
+    background: transparent url("images/button-search.png") top left no-repeat;
     color:transparent;
+    display: inline-block;
+    margin: 1px 0;
 }
 
 

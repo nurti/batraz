@@ -381,6 +381,13 @@ class BTZ_Options_Helper {
         return ( get_option(OPTION_PRIMARY_HIDE) > 0 );
     }
     
+    public static function search_on_header(){
+        return ( get_option(OPTION_SEARCH_ON_HEADER) > 0 );
+    }
+    
+    public static function search_on_footer(){
+        return ( get_option(OPTION_SEARCH_ON_FOOTER) > 0 );
+    }
     
     public static function get_logo(){
     

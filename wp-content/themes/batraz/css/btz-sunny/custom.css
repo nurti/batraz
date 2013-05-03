@@ -9,6 +9,20 @@
   background-color:  #feeebd;
 }
 
+/*---------------------------------------------------------------------------
+        SEARCH AREA ( HEADER O FOOTER )
+-----------------------------------------------------------------------------*/
+.widget_search input[type=text]{
+   background: #fefefe url("images/ui-bg_highlight-soft_75_cccccc_1x100.png") top left no-repeat;
+  
+}
+
+.widget_search input[type=submit]{
+    background: transparent url("images/button-search-light.png") top left no-repeat;
+    color:transparent;
+    display: inline-block;
+    margin: 1px 0;
+}
 
 /*---------------------------------------------------------------------------
         BUTTONS NAV SLIDE( 32 x 46 )  

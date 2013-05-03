@@ -3,7 +3,9 @@
 /*-----------------------------------------------------------------------------*/
 .site-header{
     background: #ccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) left top repeat-x; 
+    color:#000;
 }
+
 
 body.custom-background, body{
     background-color: #858585 !important; 
@@ -29,7 +31,76 @@ body .site{
 -moz-box-shadow: 4px 3px 13px 7px #6B6B6B;
 -o-box-shadow: 4px 3px 13px 7px #6B6B6B;
 }
-
-.site-content article{
-    border-color: #303030;
+.site.ui-widget-content{
+    color:#111;
 }
+
+.site-content article, .cross-post{
+    border-color: #777;
+}
+
+.main-navigation-top li a {
+        color: #111;
+}
+
+.main-navigation-top li a:hover {
+        color: #a22;
+        font-weight: bolder;
+        
+}
+
+.main-navigation div.nav-menu {
+    background: url("images/ui-bg_highlight-soft_75_cccccc_1x100.png") left top repeat-x;
+   
+}
+
+
+.widget-title, .widget-title h3{
+    background: url("images/ui-bg_highlight-soft_75_cccccc_1x100.png") 50% top repeat-x;
+}
+
+/*---------------------------------------------------------------------------
+        FOOTER
+-----------------------------------------------------------------------------*/
+footer[role="contentinfo"]{
+    background: #ccc url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) left top repeat-x; 
+}
+
+
+/*---------------------------------------------------------------------------
+        SEARCH AREA ( HEADER O FOOTER )
+-----------------------------------------------------------------------------*/
+.widget_search input[type=text]{
+   background: #fefefe url("images/ui-bg_highlight-soft_75_cccccc_1x100.png") top left no-repeat;
+  
+}
+
+.widget_search input[type=submit]{
+    background: transparent url("images/button-search-light.png") top left no-repeat;
+    color:transparent;
+    display: inline-block;
+    margin: 1px 0;
+}
+
+
+/*---------------------------------------------------------------------------
+        BUTTONS NAV SLIDE( 32 x 46 )  
+-----------------------------------------------------------------------------*/
+
+.leaders-prev span, .flickr-sets-prev span , .flickr-photos-prev span{
+    background: url('images/previous-black.png') no-repeat;;
+}
+
+.leaders-next span, .flickr-sets-next span , .flickr-photos-next span {
+    background: url('images/next-black.png') no-repeat;;
+}
+
+nav.nav-single-otp .nav-single-otp-prev a span{
+    background: url('images/previous-black.png') no-repeat;;
+}
+
+nav.nav-single-otp .nav-single-otp-next a span{
+    background: url('images/next-black.png') no-repeat;;
+}
+
+

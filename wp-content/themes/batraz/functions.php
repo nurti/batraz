@@ -10,6 +10,7 @@ require_once(STYLESHEETPATH . '/classes/constants.php');
 require_once(STYLESHEETPATH . '/classes/class-options-helper.php');
 require_once(STYLESHEETPATH . '/classes/class-leaders-helper.php');
 
+include(STYLESHEETPATH . '/functions/functions-sidebars.php');
 include(STYLESHEETPATH . '/functions/functions-plugged.php');
 include(STYLESHEETPATH . '/functions/functions-otp.php');
 include(STYLESHEETPATH . '/functions/functions-cross.php');
@@ -17,30 +18,6 @@ include(STYLESHEETPATH . '/scripts/scripts.php');
 
 
 
-/*
- *  registrazione sidebars batraz
- */
-if (function_exists('register_sidebar')) {
-    register_sidebar(array(
-        'name' => 'Sidebar footer',
-        'id' => 'sidebar-b1',
-        'description' => __('Appears on posts and pages except the optional Front Page template, which has its own widgets', 'twentytwelve'),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>',
-    ));
-    
-    register_sidebar( array(
-        'name' => __( 'Sidebar leader' ),
-        'id' => 'sidebar-l1',
-        'description' => __( 'Appears on posts and pages except the optional Front Page template, which has its own widgets', 'twentytwelve' ),
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>',
-    ) );
-}
 
 
 
@@ -69,6 +46,8 @@ function adding_elements_options_func($optObj) {
         array('name' => OPTION_PRIMARY_HIDE, 'type' => 'checkbox', 'label' => 'Nascondi menu main',),
         array('name' => OPTION_TOPRIGHT_HH, 'type' => 'checkbox', 'label' => 'Item home su menu top',),
         array('name' => OPTION_PRIMARY_HH, 'type' => 'checkbox', 'label' => 'Item home su menu primary',),
+        array('name' => OPTION_SEARCH_ON_HEADER, 'type' => 'checkbox', 'label' => 'Campo di ricerca nell \' header',),
+        array('name' => OPTION_SEARCH_ON_FOOTER, 'type' => 'checkbox', 'label' => 'Campo di ricerca nel footer',),
         array('name' => OPTION_LOGO_URL, 'type' => 'text', 'label' => 'URL logo',
             'usemedia' => '/js/media.js', 'class' => 'url-text'),
         array('name' => OPTION_COPYRIGHT, 'type' => 'text', 'label' => 'Copyright', 'class' => 'long-text'),

@@ -19,7 +19,6 @@
 .main-navigation-top div.nav-menu,
 .main-navigation-top div.nav-menu ul{
     display: inline-block !important;
-/*    border:1px solid #fff;*/
     width: 100%;
 }
 
@@ -33,7 +32,6 @@
         border-bottom: 0;
         color: #9a9a9a;
         line-height: 3.692307692;
-/*        text-transform: uppercase;*/
         white-space: nowrap;
 }
 

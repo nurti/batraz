@@ -4,26 +4,26 @@
       
         <div class="cross-post-list">      
         <?php while ( $query->have_posts() ) :  $query->the_post(); ?>
-        <div class="cross-post">
-            
-            <header class="entry-header item-right">
+            <div class="cross-post">
                 <a href="<?php the_permalink(); ?>"><?php echo get_batraz_item_thumbnail(get_the_ID(), 'floatleft'); ?></a>
-                    <h1 class="entry-title">
-                          <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'twentytwelve' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
-                    </h1>
-	    </header><!-- .entry-header -->
+                <div>
+                    <header class="entry-header">
 
-		
-		<div class="entry-content item-right">
-                        
-                        <?php the_excerpt(); ?>
-			
-		</div><!-- .entry-content -->
-		
-        </div>    
+                            <h1 class="entry-title">
+                                  <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'twentytwelve' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a>
+                            </h1>
+                    </header><!-- .entry-header -->
 
+
+                    <div class="entry-content">
+
+                            <?php the_excerpt(); ?>
+
+                    </div><!-- .entry-content -->
+                </div>	
+            </div>
         <?php endwhile; wp_reset_query(); ?>
-         </div>
+        </div>
 	
     <?php endif; ?>
 <?php endif; ?>

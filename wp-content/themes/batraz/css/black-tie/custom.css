@@ -88,26 +88,14 @@ footer div.site-info{
 }
 
 
-.template-front-page .widget-area{
-/*     background-color: #fff;*/
-}
-
-.widget-area .front-widgets h3{
-/*    background-color: transparent;*/
-}
 
 
-.template-front-page.two-sidebars .batraz-info .widget_search,
-.batraz-info .widget_search{
-    background: transparent url('images/bg-search.png') top left no-repeat;
-}
-
-.batraz-info .widget_search input[type=text]{
+.widget_search input[type=text]{
     background: transparent url('images/input-search.png') top left no-repeat;
     color:#aaa;
 }
 
-.batraz-info .widget_search input[type=submit]{
+.widget_search input[type=submit]{
     background: transparent url('images/button-search-1.png') top left no-repeat;
     color:transparent;
 }
