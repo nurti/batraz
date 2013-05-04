@@ -136,8 +136,8 @@ footer .widget_search{
     position: absolute;
     right:14px;
     right:1rem;
-    top:98px;
-    top:7rem;
+/*    top:98px;*/
+    top:6rem;
 }
 
 footer .widget_search{

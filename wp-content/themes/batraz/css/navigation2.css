@@ -1,0 +1,31 @@
+.main-navigation div.nav-menu
+{
+    padding:0 40px;
+    padding:0 2.857142857rem;
+}
+
+.main-navigation div.nav-menu ul{
+    border-top:none;
+    border-bottom:none; 
+   
+}
+
+
+.site-content nav{
+    line-height: 42px;
+    line-height: 3rem;
+}
+
+.site-content nav a{
+   text-decoration: none;
+   font-weight: bolder;
+   padding:0 14px 0 14px;
+   padding:0 1rem 0 1rem;
+}
+/*------------------------------------------------------------------------------
+            MENU TOP
+-------------------------------------------------------------------------------*/
+ul#nav-menu-top{
+    border:1px solid #000;
+}
+

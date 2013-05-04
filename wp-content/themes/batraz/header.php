@@ -36,10 +36,10 @@
 <div id="page" class="hfeed site ui-widget-content">
 	<header id="masthead" class="site-header" role="banner">
                 <?php if(!BTZ_Options_Helper::hide_topmenu()) : ?>
-                    <nav id="site-navigation-top" class="main-navigation-top" role="navigation">
+                    <nav id="nav-menu-top" class="main-navigation-top" role="navigation">
                             <h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
                             <a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
-                            <?php wp_nav_menu( array( 'theme_location' => 'topright', 'menu_class' => 'nav-menu' , 'container_class' => 'nav-menu' ) ); ?>
+                            <?php wp_nav_menu( array( 'theme_location' => 'topright', 'menu_id' => 'nav-menu-top'  )); ?>
                     </nav>
                 <?php endif; ?>
             

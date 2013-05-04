@@ -39,15 +39,59 @@ body .site{
     border-color: #777;
 }
 
-.main-navigation-top li a {
-        color: #111;
+/*----------------------------------------------------------------------------
+            MENU TOP
+-----------------------------------------------------------------------------*/
+ul#nav-menu-top {
+  box-shadow: 2px 2px 3px #666666;
+  -webkit-box-shadow: 2px 2px 3px #666666;
+  -moz-box-shadow: 2px 2px 3px #666666;
+  background: #8B8B8B;
+  background: linear-gradient(top,  #CCCCCC,  #EDEDED);
+  background: -ms-linear-gradient(top,  #CCCCCC,  #EDEDED);
+  background: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#EDEDED));
+  background: -moz-linear-gradient(top,  #CCCCCC,  #EDEDED);
+}
+ul#nav-menu-top a {
+  color: #444444;
+  text-shadow: 2px 2px 3px #aaaaaa;
+}
+ul#nav-menu-top .active a, ul#nav-menu-top li:hover > a {
+  background: #0399D4;
+  background: linear-gradient(top,  #EBEBEB,  #A1A1A1);
+  background: -ms-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+  background: -webkit-gradient(linear, left top, left bottom, from(#EBEBEB), to(#A1A1A1));
+  background: -moz-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+  color: #444444;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  text-shadow: 2px 2px 3px #FFFFFF;
 }
 
-.main-navigation-top li a:hover {
-        color: #a22;
-        font-weight: bolder;
-        
+ul#nav-menu-top ul a:hover {
+  background: #0399D4 !important;
+  background: linear-gradient(top,  #04ACEC,  #0186BA) !important;
+  background: -ms-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#04ACEC), to(#0186BA)) !important;
+  background: -moz-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+  color: #FFFFFF !important;
+  text-shadow: 2px 2px 3px #FFFFFF;
 }
+ul#nav-menu-top ul {
+  background: #DDDDDD;
+  background: linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  background: -ms-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#CFCFCF));
+  background: -moz-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  -webkit-box-shadow: 2px 2px 3px #222222;
+  -moz-box-shadow: 2px 2px 3px #222222;
+  box-shadow: 2px 2px 3px #222222;
+  border: solid 1px #B4B4B4;
+}
+ul#nav-menu-top ul a {
+  color:#424242 !important;
+  text-shadow: 2px 2px 3px #FFFFFF;
+}
+
 
 .main-navigation div.nav-menu {
     background: url("images/ui-bg_highlight-soft_75_cccccc_1x100.png") left top repeat-x;

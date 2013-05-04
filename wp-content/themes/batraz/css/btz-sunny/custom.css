@@ -9,6 +9,54 @@
   background-color:  #feeebd;
 }
 
+
+/*----------------------------------------------------------------------------
+            MENU TOP
+-----------------------------------------------------------------------------*/
+ul#nav-menu-top {
+   background: #fece2f url(images/ui-bg_gloss-wave_60_fece2f_500x100.png) left top repeat-x; 
+}
+ul#nav-menu-top a {
+  color: #444444;
+  text-shadow: 2px 2px 3px #aaaaaa;
+}
+ul#nav-menu-top .active a, ul#nav-menu-top li:hover > a {
+  background: #D40399;
+  background: linear-gradient(top,  #EBEBEB,  #A1A1A1);
+  background: -ms-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+  background: -webkit-gradient(linear, left top, left bottom, from(#d4d411), to(#A1A1A1));
+  background: -moz-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+  color: #444444;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  text-shadow: 2px 2px 3px #FFFFFF;
+}
+
+ul#nav-menu-top ul a:hover {
+  background: #0399D4 !important;
+  background: linear-gradient(top,  #04ACEC,  #0186BA) !important;
+  background: -ms-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#04ACEC), to(#0186BA)) !important;
+  background: -moz-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+  color: #FFFFFF !important;
+  text-shadow: 2px 2px 3px #FFFFFF;
+}
+ul#nav-menu-top ul {
+  background: #fece2f;
+  background: linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  background: -ms-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#817865), to(#666));
+  background: -moz-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  -webkit-box-shadow: 2px 2px 3px #222222;
+  -moz-box-shadow: 2px 2px 3px #222222;
+  box-shadow: 2px 2px 3px #222222;
+  border: solid 1px #B4B4B4;
+}
+ul#nav-menu-top ul a {
+  color:#ededed !important;
+  text-shadow: 2px 2px 3px #333;
+}
+
+
 /*---------------------------------------------------------------------------
         SEARCH AREA ( HEADER O FOOTER )
 -----------------------------------------------------------------------------*/
