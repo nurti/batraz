@@ -88,11 +88,16 @@ footer[role="contentinfo"] a {
 .credits {
     float: right;
 }  
-/* =Menu
+
+/*-----------------------------------------------
+    MENU CATEGORIE ALTERNATIVE
 ----------------------------------------------- */
 
-.main-navigation ul.nav-menu, .main-navigation div.nav-menu > ul {
+.main-navigation div.menu-primo-container > ul {
     border-color: #222222;
+    box-shadow: 2px 2px 3px #444;
+  -webkit-box-shadow: 2px 2px 6px #444;
+  -moz-box-shadow: 2px 2px 3px #444;
 }
 
 .main-navigation a:hover {
@@ -497,6 +502,26 @@ nav.nav-single-otp .nav-single-otp-prev a span{
 nav.nav-single-otp .nav-single-otp-next a span{
     background: url('images/next-white.png') no-repeat;;
 }
+
+/*---------------------------------------------------------------------------
+        SLIDE CONTENT LEADERS    
+-----------------------------------------------------------------------------*/
+
+.content-leaders-wrapper{
+    background: transparent url(images/slideshow3-bg.png) top left no-repeat;
+    text-shadow: 2px 2px 3px #aaaaaa;
+}
+
+.content-leaders-wrapper a img {
+
+    padding:8px;
+    border:solid;
+    border-color: #dddddd #aaaaaa #aaaaaa #dddddd;
+    border-width: 1px 2px 2px 1px;
+    background-color:white;
+ }
+ 
+
 
 /*---------------------------------------------------------------------------
         FLICKR

@@ -6,6 +6,7 @@ body .site{
     max-width: 74.285714285rem;
     padding: 0;
     margin-top:0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 div#main.wrapper{
@@ -23,8 +24,9 @@ header.site-header{
 header.site-header hgroup{
     max-width: 960px;
     max-width: 68.571428571rem;
-    padding:24px 40px 0 40px;
-    padding:1.714285714rem 2.857142857rem 0 2.857142857rem;
+    margin:0;
+    padding:14px 40px 0 40px;
+    padding:1.0rem 2.857142857rem 0 2.857142857rem;
 }
 
 
@@ -218,17 +220,15 @@ footer .widget_search{
 
 .content-leaders, .flickr-sets, .flickr-photos{
     position: relative;
-/*    margin:0 10px;
-    margin :0 0.714285714rem;*/
-     margin: 0 14px;
-     margin :0 1rem;
+    margin: 0 14px;
+    margin :0 1rem;
     max-width:99%; 
 
 }
 
 .content-leaders, .flickr-sets{
-    height:170px;
-    height: 12.14285714rem;
+    height:200px;
+    height: 14.285714285714294rem;
     overflow:hidden;
 }
 
@@ -241,8 +241,11 @@ footer .widget_search{
 .leaders-nav span, .flickr-sets-nav span,  .flickr-photos-nav span, nav.nav-single-otp span {
      position: absolute;
      width: 32px;
+     width: 2.285714rem;
      height: 64px;
+     height: 4.57142857rem;
      margin-top: -32px;
+     margin-top: -2.285714rem;
      z-index: 8010;
      top: 50%;
 }
@@ -253,6 +256,7 @@ footer .widget_search{
 
 .leaders-next, .flickr-sets-next, .flickr-photos-next {
 	right: 32px;
+        right : 2.285714rem;
 }
 
 
@@ -260,7 +264,6 @@ footer .widget_search{
 .content-leaders .content-leaders-wrapper{
     padding:10px 0 10px 0;
     padding :0.714285714rem 0 0.714285714rem  0;
-    height:148px;
     overflow:hidden;
     text-align: center;
     white-space: nowrap;
@@ -270,8 +273,6 @@ footer .widget_search{
     display: inline-block;
     width:140px;
     width:10rem;
-    height:130px;
-    height: 9.285714rem;
     margin:0 20px;
     margin:0 1.42857rem;
 }
@@ -279,6 +280,7 @@ footer .widget_search{
 .content-leaders .content-leaders-wrapper a{
     text-decoration: none;
     padding-top:7px;
+    padding-top: .5rem;
     display: block;
 }
 
@@ -297,6 +299,7 @@ footer .widget_search{
     text-align: center;
     white-space: nowrap;
     height:120px;
+    height: 8.57142857rem;
     overflow:hidden;
    
 }
@@ -305,8 +308,6 @@ footer .widget_search{
 
 .flickr-photos .flickr-photos-wrapper{
     text-align: center;
-/*    white-space: nowrap;*/
-       
 }
 
 .flickr-sets .flickr-sets-wrapper .Sets{
@@ -361,27 +362,32 @@ nav.nav-single-otp .nav-single-otp-prev{
 
 nav.nav-single-otp .nav-single-otp-next{
     right : 10px;
+    right : 0.71428571rem;
     
 }
 
 
 nav.nav-single-otp .nav-single-otp-prev a span {
-/*     position: absolute;*/
      width: 32px;
+     width: 2.285714rem;
      height: 64px;
+     height: 4.57142857rem;
      margin-top: -32px;
+     margin-top: -2.285714rem;
      margin-left: -24px;
+     margin-left: -1.71428571rem;
      z-index: 8010;
      top: 50%;
      
 }
 
 nav.nav-single-otp .nav-single-otp-next a span {
-/*     position: absolute;*/
      width: 32px;
+     width: 2.285714rem;
      height: 64px;
+     height: 4.57142857rem;
      margin-top: -32px;
-/*     margin-right: 20px;*/
+     margin-top: -2.285714rem;
      z-index: 8010;
      top: 50%;
      
@@ -389,6 +395,7 @@ nav.nav-single-otp .nav-single-otp-next a span {
 
 nav.nav-single-otp .nav-single-otp-prev a img {
      margin-left:10px;
+     margin-left:0.7142857rem;
 }
 
 /*---------------------------------------------------------------------------

@@ -43,14 +43,14 @@ body .site{
             MENU TOP
 -----------------------------------------------------------------------------*/
 ul#nav-menu-top {
-  box-shadow: 2px 2px 3px #666666;
+/*  box-shadow: 2px 2px 3px #666666;
   -webkit-box-shadow: 2px 2px 3px #666666;
   -moz-box-shadow: 2px 2px 3px #666666;
   background: #8B8B8B;
   background: linear-gradient(top,  #CCCCCC,  #EDEDED);
   background: -ms-linear-gradient(top,  #CCCCCC,  #EDEDED);
   background: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#EDEDED));
-  background: -moz-linear-gradient(top,  #CCCCCC,  #EDEDED);
+  background: -moz-linear-gradient(top,  #CCCCCC,  #EDEDED);*/
 }
 ul#nav-menu-top a {
   color: #444444;
@@ -92,11 +92,83 @@ ul#nav-menu-top ul a {
   text-shadow: 2px 2px 3px #FFFFFF;
 }
 
-
-.main-navigation div.nav-menu {
-    background: url("images/ui-bg_highlight-soft_75_cccccc_1x100.png") left top repeat-x;
-   
+/*----------------------------------------------------------------------------
+            MENU CATEGRIE
+-----------------------------------------------------------------------------*/
+/*ul#menu-categorie {
+  box-shadow: 2px 2px 3px #666666;
+  -webkit-box-shadow: 2px 2px 3px #666666;
+  -moz-box-shadow: 2px 2px 3px #666666;
+  background: #8B8B8B;
+  background: linear-gradient(top,  #CCCCCC,  #EDEDED);
+  background: -ms-linear-gradient(top,  #CCCCCC,  #EDEDED);
+  background: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC), to(#EDEDED));
+  background: -moz-linear-gradient(top,  #CCCCCC,  #EDEDED);
 }
+ul#menu-categorie a {
+  color: #444444;
+  text-shadow: 2px 2px 3px #aaaaaa;
+}
+ul#menu-categorie .active a, ul#menu-categorie li:hover > a {
+  background: #0399D4;
+  background: linear-gradient(top,  #EBEBEB,  #A1A1A1);
+  background: -ms-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+  background: -webkit-gradient(linear, left top, left bottom, from(#EBEBEB), to(#A1A1A1));
+  background: -moz-linear-gradient(top,  #EBEBEB,  #A1A1A1);
+  color: #444444;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  text-shadow: 2px 2px 3px #FFFFFF;
+}
+
+ul#menu-categorie ul a:hover {
+  background: #0399D4 !important;
+  background: linear-gradient(top,  #04ACEC,  #0186BA) !important;
+  background: -ms-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(#04ACEC), to(#0186BA)) !important;
+  background: -moz-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+  color: #FFFFFF !important;
+  text-shadow: 2px 2px 3px #FFFFFF;
+}
+ul#menu-categorie ul {
+  background: #DDDDDD;
+  background: linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  background: -ms-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#CFCFCF));
+  background: -moz-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  -webkit-box-shadow: 2px 2px 3px #222222;
+  -moz-box-shadow: 2px 2px 3px #222222;
+  box-shadow: 2px 2px 3px #222222;
+  border: solid 1px #B4B4B4;
+}
+ul#menu-categorie ul a {
+  color:#424242 !important;
+  text-shadow: 2px 2px 3px #FFFFFF;
+}*/
+
+
+/*------------------------------------------------
+        MENU CATEGORIE ALTERNATIVE
+----------------------------------------------- */
+
+.main-navigation div.menu-primo-container > ul {
+    border-color: #222222;
+    box-shadow: 2px 2px 3px #666666;
+  -webkit-box-shadow: 2px 2px 3px #666666;
+  -moz-box-shadow: 2px 2px 3px #666666;
+}
+
+.main-navigation a:hover {
+    color: #ef1818 !important;
+}
+.main-navigation li ul li a {
+    background: #ddd !important;
+    border-color: #222;
+}
+.main-navigation li a {
+    color: #111 !important;
+}
+
+
 
 
 .widget-title, .widget-title h3{
@@ -148,3 +220,38 @@ nav.nav-single-otp .nav-single-otp-next a span{
 }
 
 
+/*---------------------------------------------------------------------------
+        SLIDE CONTENT LEADERS    
+-----------------------------------------------------------------------------*/
+
+.content-leaders-wrapper{
+    background: transparent url(images/slideshow3-bg.png) top left no-repeat;
+    text-shadow: 2px 2px 3px #aaaaaa;
+}
+
+.content-leaders-wrapper a img {
+
+    padding:8px;
+    border:solid;
+    border-color: #dddddd #aaaaaa #aaaaaa #dddddd;
+    border-width: 1px 2px 2px 1px;
+    background-color:white;
+ }
+
+/*---------------------------------------------------------------------------
+        FLICKR
+-----------------------------------------------------------------------------*/
+.flickr-sets .flickr-sets-wrapper .Sets .SetCase{
+    padding-top:7px;
+    width: 91px;
+    height: 95px;
+    background: url(images/set_case.gif) no-repeat;
+}
+
+.content-leaders-wrapper img{  
+padding:8px;
+ border:solid;
+ border-color: #dddddd #aaaaaa #aaaaaa #dddddd;
+ border-width: 1px 2px 2px 1px;
+ background-color:white;
+}

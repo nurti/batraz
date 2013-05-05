@@ -10,6 +10,7 @@ require_once(STYLESHEETPATH . '/classes/constants.php');
 require_once(STYLESHEETPATH . '/classes/class-options-helper.php');
 require_once(STYLESHEETPATH . '/classes/class-leaders-helper.php');
 
+include(STYLESHEETPATH . '/functions/functions-head.php');
 include(STYLESHEETPATH . '/functions/functions-sidebars.php');
 include(STYLESHEETPATH . '/functions/functions-plugged.php');
 include(STYLESHEETPATH . '/functions/functions-otp.php');

@@ -52,13 +52,13 @@
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</hgroup>
                 
-                
+                <?php get_template_part( 'header', 'leaders-ajax' ); ?>   
                 
                 <?php if(!BTZ_Options_Helper::hide_mainmenu()) : ?>
                     <nav id="site-navigation" class="main-navigation" role="navigation">
                             <h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
                             <a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>
-                            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' , 'container_class' => 'nav-menu' ) ); ?>
+                            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'menu-categorie' ) ); ?>
                     </nav><!-- #site-navigation -->
                 <?php endif; ?>
                 
@@ -67,7 +67,7 @@
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
 		<?php endif; ?>
                         
-               <?php get_template_part( 'header', 'leaders-ajax' ); ?>      
+                 
 	</header><!-- #masthead -->
 
 	<div id="main" class="wrapper">

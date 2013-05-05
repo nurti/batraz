@@ -56,6 +56,36 @@ ul#nav-menu-top ul a {
   text-shadow: 2px 2px 3px #333;
 }
 
+/*------------------------------------------------
+        MENU CATEGORIE ALTERNATIVE
+----------------------------------------------- */
+
+.main-navigation div.menu-primo-container > ul {
+    border-color: #222222;
+    box-shadow: 2px 2px 3px #494437;
+  -webkit-box-shadow: 2px 2px 3px #494437;
+  -moz-box-shadow: 2px 2px 3px #494437;
+}
+
+.main-navigation li a {
+     text-shadow: 2px 2px 3px #aaaaaa;
+}
+
+.main-navigation li a:hover {
+    color: #a45b13 !important;
+}
+
+.main-navigation li ul li a:hover {
+    color: #ffdd57 !important;
+}
+.main-navigation li ul li a {
+    background: #817865 !important;
+    border-color: #494437;
+    color:#ededed !important;
+}
+.main-navigation li a {
+    color: #111 !important;
+}
 
 /*---------------------------------------------------------------------------
         SEARCH AREA ( HEADER O FOOTER )
@@ -91,7 +121,25 @@ nav.nav-single-otp .nav-single-otp-prev a span{
 nav.nav-single-otp .nav-single-otp-next a span{
     background: url('images/next-black.png') no-repeat;;
 }
+/*---------------------------------------------------------------------------
+        SLIDE CONTENT LEADERS    
+-----------------------------------------------------------------------------*/
 
+.content-leaders-wrapper{
+    background: url(images/slideshow3-bg.png) top left no-repeat;
+    text-shadow: 2px 2px 3px #aaaaaa;
+}
+
+.content-leaders-wrapper a img {
+
+    padding:8px;
+    border:solid;
+    border-color: #dddddd #aaaaaa #aaaaaa #dddddd;
+    border-width: 1px 2px 2px 1px;
+    background-color:white;
+ }
+
+ 
 /*---------------------------------------------------------------------------
         FLICKR
 -----------------------------------------------------------------------------*/

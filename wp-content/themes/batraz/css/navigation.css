@@ -1,32 +1,25 @@
-.main-navigation div.nav-menu
-{
-    padding:0 40px;
-    padding:0 2.857142857rem;
-}
 
-.main-navigation div.nav-menu ul{
-    border-top:none;
-    border-bottom:none; 
-   
-}
+/*--------------------------------------------------------------------------
+            MENU TOP
+---------------------------------------------------------------------------*/
 
 ul#nav-menu-top {
   width: 48%;
   margin: 0px 0px 0px 0px;
   padding: 6px 6px 0 6px;
+  padding: 0.42857rem 0.42857rem 0 0.42857rem;
   height: 34px;
+  height: 2.42857rem;
   line-height: 100%;
-  border-radius: 6px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
   position:absolute;
   right:2px;
-  top:7px;
+  top:2px;
   z-index:999;
 }
 ul#nav-menu-top li {
   margin: 0px 6px 0px 6px;
-  padding: 0px 0px 6px 0px;
+  margin: 0px 0.42857rem 0px 0.42857rem;
+  padding: 0px 0px 0.42857rem 0px;
   float: left;
   position: relative;
   list-style: none;
@@ -35,10 +28,11 @@ ul#nav-menu-top a {
   font-weight: bold;
   font-family: arial;
   font-style: normal;
-  font-size: 12px;
+  font-size: 86%;
   text-decoration: none;
   display: block;
   padding: 6px 20px 6px 20px;
+  padding: 0.42857rem 1.4285714rem 0.42857rem 1.4285714rem;
   margin: 0;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -63,6 +57,7 @@ ul#nav-menu-top ul {
   margin: 0;
   padding: 0;
   width: 185px;
+  width: 13.2142857rem;
   position: absolute;
   top: 30px;
   left: -60px;
@@ -80,7 +75,7 @@ ul#nav-menu-top ul li {
 }
 ul#nav-menu-top ul a {
   padding:10px 0px 10px 15px;
-  font-size:12px;
+  font-size:86%;
   font-style:normal;
   font-family:arial;
   font-weight: normal;
@@ -120,14 +115,125 @@ ul#nav-menu-top {
 }
 
 
-.site-content nav{
-    line-height: 42px;
-    line-height: 3rem;
+
+/*--------------------------------------------------------------------------
+            MENU CATEGORIE
+---------------------------------------------------------------------------*/
+.main-navigation li a{
+    text-align: left;
 }
 
-.site-content nav a{
-   text-decoration: none;
-   font-weight: bolder;
-   padding:0 14px 0 14px;
-   padding:0 1rem 0 1rem;
+ul#menu-categorie {
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 6px 6px 6px;
+  padding: 0 0.42857rem 0.42857rem 0.42857rem;
+  height: 34px;
+  height: 2.42857rem;
+  line-height: 100%;
+  
+  position:relative;
+  z-index:999;
 }
+ul#menu-categorie li {
+  margin: 0px 6px 0px 6px;
+  margin: 0px 0.42857rem 0px 0.42857rem;
+  padding: 0px 0px 6px 0px;
+  padding: 0px 0px 0.42857rem 0px;
+  float: left;
+  position: relative;
+  list-style: none;
+}
+ul#menu-categorie a {
+  font-weight: bold;
+  font-family: arial;
+  font-style: normal;
+  font-size: 0.86rem;
+  text-decoration: none;
+  display: block;
+  padding: 0px 20px 0px 20px;
+  padding: 0px 1.42857rem 0px 1.42857rem;
+  margin: 0;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+}
+ul#menu-categorie .active a, ul#menu-categorie li:hover > a {
+}
+ul#menu-categorie ul li:hover a, ul#menu-categorie li:hover li a {
+  background: none;
+  border: none;
+  -box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+ul#menu-categorie ul a:hover {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+ul#menu-categorie ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  width: 14.285714rem;
+  position: absolute;
+  top: 34px;
+  left: 30px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+}
+ul#menu-categorie li:hover > ul {
+  display: block;
+}
+ul#menu-categorie ul li {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+ul#menu-categorie ul a {
+  padding:7px 0px 7px 14px;
+  padding:0.5rem 0px 0.5rem 1.0rem;
+  font-size:0.86rem;
+  font-style:normal;
+  font-family:arial;
+  font-weight: normal;
+  text-transform: none;
+}
+ul#menu-categorie ul li:first-child > a {
+  border-top-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+}
+ul#menu-categorie ul li:last-child > a {
+  border-bottom-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+}
+ul#menu-categorie:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+ul#menu-categorie {
+  display: inline-block;
+}
+  html[xmlns] ul#menu-categorie {
+  display: block;
+}
+* html ul#menu-categorie {
+  height: 1%;
+}
+
+
