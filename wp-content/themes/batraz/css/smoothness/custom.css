@@ -223,10 +223,16 @@ nav.nav-single-otp .nav-single-otp-next a span{
 /*---------------------------------------------------------------------------
         SLIDE CONTENT LEADERS    
 -----------------------------------------------------------------------------*/
-
 .content-leaders-wrapper{
-    background: transparent url(images/slideshow3-bg.png) top left no-repeat;
+    
+}
+.content-leaders-wrapper{
+    background: transparent url(../../images/slideshow-bg.png) bottom left no-repeat;
     text-shadow: 2px 2px 3px #aaaaaa;
+/*    border-style: inset;*/
+    box-shadow: 2px 2px 3px #666666;
+  -webkit-box-shadow: 2px 2px 3px #666666;
+  -moz-box-shadow: 2px 2px 3px #666666;
 }
 
 .content-leaders-wrapper a img {
@@ -245,7 +251,7 @@ nav.nav-single-otp .nav-single-otp-next a span{
     padding-top:7px;
     width: 91px;
     height: 95px;
-    background: url(images/set_case.gif) no-repeat;
+    background: url(../../images/set_case.gif) no-repeat;
 }
 
 .content-leaders-wrapper img{  

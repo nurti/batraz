@@ -185,8 +185,11 @@ footer div.site-info{
 }
 
 .content-leaders-wrapper{
-    background: url(images/slideshow3-bg.png) top left no-repeat;
+    background: url(../../images/slideshow-bg.png) bottom left no-repeat;
     text-shadow: 2px 2px 3px #aaa;
+    box-shadow: 2px 2px 3px #666666;
+    -webkit-box-shadow: 2px 2px 3px #666666;
+    -moz-box-shadow: 2px 2px 3px #666666;
 }
 
 .content-leaders-wrapper a img {
@@ -278,9 +281,9 @@ ul#nav-menu-top ul a {
 
 .main-navigation div.menu-primo-container > ul {
     border-color: #222222;
-    box-shadow: 2px 2px 6px #444;
-  -webkit-box-shadow: 2px 2px 6px #aaa;
-  -moz-box-shadow: 2px 2px 6px #444;
+    box-shadow: 2px 2px 3px #666;
+  -webkit-box-shadow: 2px 2px 3px #666;
+  -moz-box-shadow: 2px 2px 3px #666;
 }
 .main-navigation li a {
      text-shadow: 2px 2px 3px #00a;
@@ -306,7 +309,7 @@ ul#nav-menu-top ul a {
     padding-top:7px;
     width: 91px;
     height: 95px;
-    background: url(images/set_case.gif) no-repeat;
+    background: url(../../images/set_case.gif) no-repeat;
 }
 
 /*---------------------------------------------------------------------------

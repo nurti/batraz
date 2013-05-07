@@ -21,10 +21,15 @@ header.site-header{
     
 }
 
+header.site-header h2{
+    font-family: 'Ubuntu';
+}
+
 header.site-header hgroup{
     max-width: 960px;
     max-width: 68.571428571rem;
-    margin:0;
+    margin:0 0 14px 0;
+    margin:0 0 1rem 0;
     padding:14px 40px 0 40px;
     padding:1.0rem 2.857142857rem 0 2.857142857rem;
 }
@@ -193,7 +198,7 @@ footer .widget_search{
         SLIDE CONTENT LEADERS    
 -----------------------------------------------------------------------------*/
 .header-leaders{
-    min-height: 35px;
+/*    min-height: 35px;
     min-height: 2.5rem;
     line-height: 35px;
     line-height: 2.5rem;
@@ -203,10 +208,11 @@ footer .widget_search{
     
     padding-left: 14px;
     padding-left: 1rem;
-    font-style: italic;
-    width:96%;
+    font-style: italic;*/
+/*    width:99%;*/
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Rokkit', cursive;
 }
 
 .header-leaders span{

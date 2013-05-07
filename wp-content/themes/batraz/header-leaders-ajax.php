@@ -3,8 +3,8 @@
         <?php if(is_array($leadarr) && array_key_exists('slug', $leadarr)) : ?>
              <div class="leaders-list ui-widget" title="<?php echo get_taxonomy($leadarr['slug'])->labels->name;  ?>">
              <?php if(isset($leadarr['show_desc']) && $leadarr['show_desc']) : ?>
-                        <div class="header-leaders ui-widget-header ui-corner-all">
-                              <span><marquee> <?php echo get_taxonomy($leadarr['slug'])->description; ?></marquee></span>
+                        <div class="header-leaders">
+                              <span><marquee scrollamount="5"><?php echo get_taxonomy($leadarr['slug'])->description; ?></marquee></span>
                         </div> 
                    <?php endif; ?>
                    <div id="slide-leaders" class="content-leaders">

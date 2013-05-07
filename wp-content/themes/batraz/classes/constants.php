@@ -31,7 +31,7 @@ define( 'THEME_UI_DARKNESS' , 'UI Darkness');
 
 define( 'OPTION_LEADERS_PPP' , 'btz_leaders_ppp');
 define( 'OPTION_LEADERS_SPEED' , 'btz_leaders_speed');
+
+
 define( 'OPTION_OTP_NAV_INFINITE' , 'btz_otp_nav_infinite');
-
-
 define( 'OPTION_TAXONOMIES_HIDE' , 'btz_taxonomies_hide');
